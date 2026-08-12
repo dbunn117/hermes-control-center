@@ -1,0 +1,631 @@
+{
+  "generated_at": "2026-08-11T21:37:50",
+  "profiles": [
+    {
+      "display": "Scout",
+      "role": "Personal OS / orchestrator",
+      "owns": "General admin, Obsidian, Alpha Infra, CRM, email, schedules, household ops",
+      "accent": "#10b981",
+      "bot": "@DangerousDavisBot",
+      "key": "personal",
+      "config": {
+        "model": "gpt-5.5",
+        "provider": "openai-codex",
+        "base_url": "https://chatgpt.com/backend-api/codex",
+        "fallback": [],
+        "browser_backend": "browser-use",
+        "browser_cloud": "browser-use",
+        "terminal_backend": "local",
+        "reasoning": "medium",
+        "config_path": "/root/.hermes/profiles/personal/config.yaml",
+        "soul_path": "/root/.hermes/profiles/personal/SOUL.md",
+        "cron_path": "/root/.hermes/profiles/personal/cron/jobs.json"
+      },
+      "soul": [
+        "Be helpful, direct, practical, and grounded in real execution.",
+        "Prefer doing useful work with tools over giving abstract advice.",
+        "Be concise by default, but thorough when the task needs analysis.",
+        "Admit uncertainty and verify against live sources/files/tools when possible.",
+        "Use David's Obsidian vault as the durable memory layer for projects, people, ideas, daily reflections, health context, and business development.",
+        "Act as David's personal operating-system assistant across family life, health tracking, career transition, AI consulting, content, CRM/networking, dashboards, and admin.",
+        "Help David move from finance/accounting and Stockbridge work toward practical AI consulting, freelance work, and personal AI products without losing financial/operator discipline."
+      ],
+      "gateway": {
+        "state": "running",
+        "updated_at": "2026-08-12T04:33:12.417709+00:00",
+        "active_agents": 1,
+        "pid": 575649,
+        "platforms": {
+          "telegram": {
+            "state": "connected",
+            "updated_at": "2026-07-29T06:33:16.306932+00:00",
+            "error": null
+          }
+        }
+      },
+      "jobs": [
+        {
+          "id": "8b284bc1a523",
+          "name": "Monthly dog heart medication reminder",
+          "active": true,
+          "state": "scheduled",
+          "schedule": "0 16 23 * *",
+          "next_run_at": "2026-08-23T16:00:00+00:00",
+          "last_run_at": "2026-07-23T16:00:59.986366+00:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [
+            "agentmail"
+          ],
+          "script": "",
+          "no_agent": false,
+          "completed": 3,
+          "times": null,
+          "model_snapshot": "gpt-5.5",
+          "provider_snapshot": "openai-codex"
+        },
+        {
+          "id": "b1cb7ec4a4b0",
+          "name": "Weekly Peaches ear cleaning email reminder",
+          "active": true,
+          "state": "scheduled",
+          "schedule": "30 2 * * 2",
+          "next_run_at": "2026-08-18T02:30:00-07:00",
+          "last_run_at": "2026-08-11T02:30:33.068908-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [
+            "agentmail"
+          ],
+          "script": "",
+          "no_agent": false,
+          "completed": 10,
+          "times": null,
+          "model_snapshot": "gpt-5.5",
+          "provider_snapshot": "openai-codex"
+        },
+        {
+          "id": "908e0c760331",
+          "name": "Daily sports briefing email",
+          "active": true,
+          "state": "scheduled",
+          "schedule": "0 6 * * *",
+          "next_run_at": "2026-08-12T06:00:00-07:00",
+          "last_run_at": "2026-08-11T06:03:32.088508-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [
+            "agentmail",
+            "personalized-briefings"
+          ],
+          "script": "",
+          "no_agent": false,
+          "completed": 66,
+          "times": null,
+          "model_snapshot": "gpt-5.5",
+          "provider_snapshot": "openai-codex"
+        },
+        {
+          "id": "5557db09dcfa",
+          "name": "Weekly WHOOP health report email",
+          "active": false,
+          "state": "paused",
+          "schedule": "0 15 * * 6",
+          "next_run_at": "2026-07-25T15:00:00+00:00",
+          "last_run_at": "2026-07-18T15:05:08.207768+00:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [
+            "personal-health-data-integrations",
+            "pp-whoop",
+            "agentmail"
+          ],
+          "script": "",
+          "no_agent": false,
+          "completed": 3,
+          "times": null,
+          "model_snapshot": "gpt-5.5",
+          "provider_snapshot": "openai-codex"
+        },
+        {
+          "id": "d009212c9d15",
+          "name": "Daily podcast digest email",
+          "active": true,
+          "state": "scheduled",
+          "schedule": "30 7 * * *",
+          "next_run_at": "2026-08-12T07:30:00-07:00",
+          "last_run_at": "2026-08-11T07:40:46.823945-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [
+            "agentmail"
+          ],
+          "script": "podcast_digest_collect.py",
+          "no_agent": false,
+          "completed": 35,
+          "times": null,
+          "model_snapshot": "gpt-5.5",
+          "provider_snapshot": "openai-codex"
+        },
+        {
+          "id": "6371ef431914",
+          "name": "Daily Obsidian reflection prompt",
+          "active": true,
+          "state": "scheduled",
+          "schedule": "0 22 * * *",
+          "next_run_at": "2026-08-11T22:00:00-07:00",
+          "last_run_at": "2026-08-10T22:00:24.747891-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [],
+          "script": "",
+          "no_agent": false,
+          "completed": 33,
+          "times": null,
+          "model_snapshot": "gpt-5.5",
+          "provider_snapshot": "openai-codex"
+        },
+        {
+          "id": "fbfcdee20d2f",
+          "name": "Daily email triage - Scout Gmail and AgentMail",
+          "active": true,
+          "state": "scheduled",
+          "schedule": "0 16 * * *",
+          "next_run_at": "2026-08-12T16:00:00-07:00",
+          "last_run_at": "2026-08-11T16:00:54.670404-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [
+            "agentmail",
+            "google-workspace"
+          ],
+          "script": "",
+          "no_agent": false,
+          "completed": 30,
+          "times": null,
+          "model_snapshot": "gpt-5.5",
+          "provider_snapshot": "openai-codex"
+        },
+        {
+          "id": "d9a3389c1802",
+          "name": "Reach back out to Collin Cochrane",
+          "active": true,
+          "state": "scheduled",
+          "schedule": "once at 2026-08-15 16:00",
+          "next_run_at": "2026-08-15T16:00:00+00:00",
+          "last_run_at": null,
+          "last_status": "not run",
+          "deliver": "origin",
+          "skills": [],
+          "script": "",
+          "no_agent": false,
+          "completed": 0,
+          "times": 1,
+          "model_snapshot": "gpt-5.5",
+          "provider_snapshot": "openai-codex"
+        },
+        {
+          "id": "7915b5a6b404",
+          "name": "Daily Health OS dashboard data refresh",
+          "active": false,
+          "state": "paused",
+          "schedule": "0 14 * * *",
+          "next_run_at": "2026-07-25T14:00:00+00:00",
+          "last_run_at": null,
+          "last_status": "not run",
+          "deliver": "local",
+          "skills": [],
+          "script": "health_dashboard_refresh.sh",
+          "no_agent": true,
+          "completed": 0,
+          "times": null,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        },
+        {
+          "id": "b0a0e6801bbe",
+          "name": "Alpha Infra CA Statement of Information reminder",
+          "active": true,
+          "state": "scheduled",
+          "schedule": "once at 2026-10-01 16:00",
+          "next_run_at": "2026-10-01T16:00:00+00:00",
+          "last_run_at": null,
+          "last_status": "not run",
+          "deliver": "origin",
+          "skills": [],
+          "script": "",
+          "no_agent": false,
+          "completed": 0,
+          "times": 1,
+          "model_snapshot": "gpt-5.5",
+          "provider_snapshot": "openai-codex"
+        },
+        {
+          "id": "c8ca9fc353d0",
+          "name": "Scout AgentMail action queue",
+          "active": true,
+          "state": "scheduled",
+          "schedule": "every 30m",
+          "next_run_at": "2026-08-11T21:54:43.246581-07:00",
+          "last_run_at": "2026-08-11T21:24:43.246581-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [
+            "agentmail",
+            "google-workspace"
+          ],
+          "script": "",
+          "no_agent": false,
+          "completed": 672,
+          "times": 999999,
+          "model_snapshot": "gpt-5.5",
+          "provider_snapshot": "openai-codex"
+        },
+        {
+          "id": "9dc1e5f7c975",
+          "name": "Daily Obsidian lifecycle sweep",
+          "active": true,
+          "state": "scheduled",
+          "schedule": "15 8 * * *",
+          "next_run_at": "2026-08-12T08:15:00-07:00",
+          "last_run_at": "2026-08-11T08:15:25.714231-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [],
+          "script": "obsidian_lifecycle_sweep.sh",
+          "no_agent": true,
+          "completed": 7,
+          "times": 999999,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        }
+      ]
+    },
+    {
+      "display": "Heath",
+      "role": "Health OS specialist",
+      "owns": "03 Health, diabetes trend support, WHOOP/Glooko/Health dashboard, clinician prep",
+      "accent": "#0ea5e9",
+      "bot": "@Heath117Bot",
+      "key": "heath",
+      "config": {
+        "model": "deepseek/deepseek-v4-flash",
+        "provider": "openrouter",
+        "base_url": "",
+        "fallback": [
+          {
+            "provider": "github-copilot",
+            "model": "gpt-4.1"
+          }
+        ],
+        "browser_backend": "",
+        "browser_cloud": "",
+        "terminal_backend": "local",
+        "reasoning": "medium",
+        "config_path": "/root/.hermes/profiles/heath/config.yaml",
+        "soul_path": "/root/.hermes/profiles/heath/SOUL.md",
+        "cron_path": "/root/.hermes/profiles/heath/cron/jobs.json"
+      },
+      "soul": [
+        "Focus on David's health-related systems only: type 1 diabetes pattern support, Glooko/Dexcom data, WHOOP recovery/sleep/strain, workouts, body composition, supplies tracking, clinician prep, Health OS dashboard maintenance, and health admin.",
+        "Keep health workflows private, local, and operational. Prefer verified data pulls, dashboard updates, reminders, and clear trend summaries over abstract advice.",
+        "Use David's Health OS dashboard and local health-data files as the working system of record when available.",
+        "Own and maintain David's Obsidian health folder at `/root/obsidian/David OS/03 Health/`, including the health index, diabetes observations, supplies, DEXA, Sutter summaries, and links back to Health OS dashboard surfaces.",
+        "David has type 1 diabetes and uses Dexcom G7, Omnipod 5, and Humalog.",
+        "Never autonomously change insulin dosing, pump settings, treatment plans, medication, or urgent-care decisions.",
+        "Label analysis as observation/pattern support, not medical advice."
+      ],
+      "gateway": {
+        "state": "running",
+        "updated_at": "2026-08-11T23:56:43.759239+00:00",
+        "active_agents": 0,
+        "pid": 758688,
+        "platforms": {
+          "telegram": {
+            "state": "connected",
+            "updated_at": "2026-08-05T23:00:43.408391+00:00",
+            "error": null
+          }
+        }
+      },
+      "jobs": [
+        {
+          "id": "8e6921f43b95",
+          "name": "Daily Health OS dashboard refresh",
+          "active": true,
+          "state": "scheduled",
+          "schedule": "0 7 * * *",
+          "next_run_at": "2026-08-12T07:00:00-07:00",
+          "last_run_at": "2026-08-11T07:03:32.050023-07:00",
+          "last_status": "ok",
+          "deliver": "telegram",
+          "skills": [],
+          "script": "health_dashboard_refresh.sh",
+          "no_agent": true,
+          "completed": 19,
+          "times": null,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        },
+        {
+          "id": "af2804f5ef75",
+          "name": "Weekly Health OS report",
+          "active": true,
+          "state": "scheduled",
+          "schedule": "0 8 * * 6",
+          "next_run_at": "2026-08-15T08:00:00-07:00",
+          "last_run_at": "2026-08-08T08:00:18.250354-07:00",
+          "last_status": "ok",
+          "deliver": "telegram",
+          "skills": [],
+          "script": "weekly_health_report.py",
+          "no_agent": true,
+          "completed": 4,
+          "times": null,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        },
+        {
+          "id": "64b5fd46cffb",
+          "name": "Overnight Hypo Check + Morning Brief",
+          "active": true,
+          "state": "scheduled",
+          "schedule": "15 7 * * *",
+          "next_run_at": "2026-08-12T07:15:00-07:00",
+          "last_run_at": "2026-08-11T07:17:12.153773-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [
+            "health/ladder-workout-video-ingest",
+            "health/health-nutrition-macro-tracking"
+          ],
+          "script": "",
+          "no_agent": false,
+          "completed": 6,
+          "times": null,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        }
+      ]
+    },
+    {
+      "display": "Paula",
+      "role": "Parenting / kids specialist",
+      "owns": "04 Parenting, toddler activities, routines, family weekend ideas",
+      "accent": "#f59e0b",
+      "bot": "@paula117_bot",
+      "key": "paula",
+      "config": {
+        "model": "gpt-4.1",
+        "provider": "github-copilot",
+        "base_url": "",
+        "fallback": [],
+        "browser_backend": "",
+        "browser_cloud": "",
+        "terminal_backend": "local",
+        "reasoning": "medium",
+        "config_path": "/root/.hermes/profiles/paula/config.yaml",
+        "soul_path": "/root/.hermes/profiles/paula/SOUL.md",
+        "cron_path": "/root/.hermes/profiles/paula/cron/jobs.json"
+      },
+      "soul": [
+        "Focus on David's parenting-related systems only: toddler activities, parenting playbooks, twin routines, behavior-pattern notes, books/frameworks, daycare/school prep, and family activity planning.",
+        "Be warm, practical, calm, and specific. Help David and Jennifer with usable ideas they can try when tired, busy, or dealing with twin toddler chaos.",
+        "Prefer concrete outputs: activity plans, scripts, routines, packing lists, rainy-day options, weekend ideas, reflection logs, and Obsidian updates.",
+        "Own and maintain David's Obsidian parenting folder at `/root/obsidian/David OS/04 Parenting/`, including the parenting index, behavior playbooks, activity ideas, book takeaways, and parenting experiments.",
+        "Paula supports parenting, routine design, activity planning, and pattern reflection. Paula is not a pediatrician, therapist, child psychologist, or emergency adviser.",
+        "For medical, developmental, behavioral, or safety concerns, frame observations as questions to raise with pediatricians, teachers, daycare staff, or qualified professionals.",
+        "Do not shame, diagnose, or over-pathologize normal toddler behavior. Favor calm, evidence-informed, developmentally appropriate suggestions."
+      ],
+      "gateway": {
+        "state": "running",
+        "updated_at": "2026-08-10T22:27:12.996037+00:00",
+        "active_agents": 0,
+        "pid": 756656,
+        "platforms": {
+          "telegram": {
+            "state": "connected",
+            "updated_at": "2026-08-05T22:20:40.555719+00:00",
+            "error": null
+          }
+        }
+      },
+      "jobs": [
+        {
+          "id": "83b4ca5e12c5",
+          "name": "Paula's Local Weekend Activities & Weather Briefing",
+          "active": true,
+          "state": "scheduled",
+          "schedule": "0 20 * * 4",
+          "next_run_at": "2026-08-13T20:00:00-07:00",
+          "last_run_at": "2026-08-06T20:01:41.034002-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [],
+          "script": "",
+          "no_agent": false,
+          "completed": 1,
+          "times": null,
+          "model_snapshot": "gpt-4.1",
+          "provider_snapshot": "copilot"
+        },
+        {
+          "id": "d49e02d15787",
+          "name": "Toddler Twin Evening Activity & Toy List",
+          "active": true,
+          "state": "scheduled",
+          "schedule": "0 18 * * 1,2,3",
+          "next_run_at": "2026-08-12T18:00:00-07:00",
+          "last_run_at": "2026-08-11T18:02:46.343770-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [],
+          "script": "",
+          "no_agent": false,
+          "completed": 2,
+          "times": null,
+          "model_snapshot": "gpt-4.1",
+          "provider_snapshot": "copilot"
+        }
+      ]
+    }
+  ],
+  "dashboards": [
+    {
+      "name": "Health OS Dashboard",
+      "owner": "Heath",
+      "status": "Active",
+      "live": "https://dbunn117.github.io/health-dashboard/",
+      "repo": "/root/health-dashboard",
+      "remote": "https://github.com/dbunn117/health-dashboard.git",
+      "public_outputs": [
+        "/root/health-dashboard/docs/index.html",
+        "/root/health-dashboard/docs/data.json"
+      ],
+      "private_sources": [
+        "/root/health-data/glooko/raw",
+        "/root/health-data/dexa/dexa_measurements.json",
+        "/root/health-data/supplies/diabetes_supplies.json",
+        "/root/health-data/sutter/parsed/sutter_dashboard_metrics_2026-07-15.json",
+        "/root/health-dashboard/data/health.sqlite",
+        "/root/health-dashboard/data/dashboard_data.json"
+      ],
+      "pull": "Heath cron runs health_dashboard_refresh.sh daily. It refreshes Glooko export chunks, regenerates SQLite + JSON, pulls WHOOP via whoop-pp-cli, then commits/pushes docs/data when changed.",
+      "data_notes": "Data range 2024-01-23 \u2192 2026-08-10; keys: generated_at, date_range, summary30, daily90, joined30, workouts30, hourly_glucose, analytics, dexa, supplies",
+      "privacy": "Raw glucose/insulin and health exports stay local/private; published docs use derived/sanitized dashboard JSON. Health advice remains observation only.",
+      "git_status": "M generate_dashboard.py"
+    },
+    {
+      "name": "Podcast Digest / David Podcast OS",
+      "owner": "Scout",
+      "status": "Active",
+      "live": "https://dbunn117.github.io/podcast-digest/",
+      "repo": "/root/podcast-digest",
+      "remote": "https://github.com/dbunn117/podcast-digest.git",
+      "public_outputs": [
+        "/root/podcast-digest/docs/index.html",
+        "/root/podcast-digest/docs/episodes.json"
+      ],
+      "private_sources": [
+        "/root/podcast-digest/config.json",
+        "/root/podcast-digest/data/episodes.json",
+        "/root/podcast-digest/data/latest_digest.md",
+        "/root/podcast-digest/data/transcripts/*.txt/json",
+        "/root/obsidian/David OS/02 Personal/Media/Podcasts/Daily Digests/"
+      ],
+      "pull": "Scout cron runs podcast_digest_collect.py daily. It reads RSS feeds, transcribes recent episodes locally, generates derived takeaways, writes Obsidian digests, updates static docs, and pushes changes.",
+      "data_notes": "Episodes indexed: 5235; podcasts: 8; top keys: episodes, ytd, podcasts, stats, errors",
+      "privacy": "Raw transcripts remain local by default; public dashboard gets episode metadata and derived summaries/takeaways.",
+      "git_status": "clean"
+    },
+    {
+      "name": "Obsidian Lifecycle / Vault Health",
+      "owner": "Scout",
+      "status": "Active",
+      "live": "Obsidian vault note: /root/obsidian/David OS/99 System/Vault Health.md",
+      "repo": "/root/obsidian/David OS",
+      "remote": "local vault + Obsidian Headless Sync service",
+      "public_outputs": [
+        "/root/obsidian/David OS/99 System/Vault Health.md"
+      ],
+      "private_sources": [
+        "/root/obsidian/David OS",
+        "/root/.hermes/profiles/personal/scripts/obsidian_lifecycle_audit.py"
+      ],
+      "pull": "Daily no-agent cron runs obsidian_lifecycle_sweep.sh, which audits allowed top-level folders, broken wikilinks, lifecycle/status drift, index coverage, and sensitive-term signals. It writes a report only when useful.",
+      "data_notes": "Non-destructive audit. Current desired top-level folders: Inbox, Daily Notes, Personal, Health, Parenting, Network, Work & Career, Alpha Infra, System.",
+      "privacy": "Does not publish vault content. Flags drift, does not silently delete/archive active notes.",
+      "git_status": "local vault"
+    },
+    {
+      "name": "Hermes Control Center",
+      "owner": "Scout",
+      "status": "New",
+      "live": "/root/hermes-control-center/index.html",
+      "repo": "/root/hermes-control-center",
+      "remote": "local static artifact",
+      "public_outputs": [
+        "/root/hermes-control-center/index.html",
+        "/root/hermes-control-center/control-center-data.json"
+      ],
+      "private_sources": [
+        "/root/.hermes/profiles/*/config.yaml",
+        "/root/.hermes/profiles/*/SOUL.md",
+        "/root/.hermes/profiles/*/cron/jobs.json",
+        "/root/.hermes/profiles/*/gateway_state.json",
+        "/root/health-dashboard",
+        "/root/podcast-digest",
+        "/root/obsidian/David OS"
+      ],
+      "pull": "Generated on demand by Scout from redacted profile config, cron metadata, gateway state, dashboard repos, and curated system notes.",
+      "data_notes": "This page is the current operator map for the Hermes/Scout ecosystem.",
+      "privacy": "Secrets are redacted; prompts and tokens are not dumped into the public view.",
+      "git_status": "local artifact"
+    }
+  ],
+  "stack": [
+    {
+      "layer": "Agent runtime",
+      "items": [
+        "Hermes Agent profiles: personal, heath, paula",
+        "Gateway adapters: Telegram connected for all three profiles",
+        "Cron scheduler per profile",
+        "Skills + memory under profile-specific ~/.hermes/profiles/<name>/"
+      ]
+    },
+    {
+      "layer": "Models",
+      "items": [
+        "Scout/personal: OpenAI Codex gpt-5.5",
+        "Heath: OpenRouter deepseek/deepseek-v4-flash with GitHub Copilot gpt-4.1 fallback",
+        "Paula: GitHub Copilot gpt-4.1"
+      ]
+    },
+    {
+      "layer": "Tools & integrations",
+      "items": [
+        "AgentMail inbox scout117@agentmail.to",
+        "Google Workspace OAuth configured but currently needs re-auth for Gmail search",
+        "Browser backend set to browser-use, API key/provider not yet verified active",
+        "WHOOP via whoop-pp-cli using Heath isolated home",
+        "Glooko export refresh for Dexcom/Omnipod data"
+      ]
+    },
+    {
+      "layer": "Storage",
+      "items": [
+        "Obsidian vault: /root/obsidian/David OS",
+        "Health private data: /root/health-data and /root/health-dashboard/data",
+        "Podcast private data: /root/podcast-digest/data",
+        "Hermes config/state: /root/.hermes/profiles/<profile>/",
+        "Published static dashboards via GitHub Pages docs/ folders"
+      ]
+    }
+  ],
+  "scripts": {
+    "personal": [
+      "/root/.hermes/profiles/personal/scripts/firecrawl_scrape.py",
+      "/root/.hermes/profiles/personal/scripts/glooko_export_refresh.py",
+      "/root/.hermes/profiles/personal/scripts/health_dashboard_refresh.sh",
+      "/root/.hermes/profiles/personal/scripts/obsidian_lifecycle_audit.py",
+      "/root/.hermes/profiles/personal/scripts/obsidian_lifecycle_sweep.sh",
+      "/root/.hermes/profiles/personal/scripts/podcast_digest_collect.py",
+      "/root/.hermes/profiles/personal/scripts/watch_1104_burke_ln.py"
+    ],
+    "heath": [
+      "/root/.hermes/profiles/heath/scripts/glooko_export_refresh.py",
+      "/root/.hermes/profiles/heath/scripts/health_dashboard_refresh.sh",
+      "/root/.hermes/profiles/heath/scripts/overnight_hypo_check.py",
+      "/root/.hermes/profiles/heath/scripts/weekly_health_report.py"
+    ],
+    "paula": []
+  },
+  "metrics": {
+    "profiles": 3,
+    "jobs": 17,
+    "active_jobs": 15,
+    "paused_jobs": 2,
+    "ok_jobs": 14,
+    "no_agent_jobs": 4
+  }
+}

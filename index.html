@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Hermes Control Center</title>
+<style>
+:root{--bg:#f6f7f4;--panel:#ffffff;--ink:#17211b;--muted:#65736b;--line:#dfe5dd;--green:#1f8f5f;--green2:#cceedd;--shadow:0 20px 50px rgba(30,54,38,.08);}
+*{box-sizing:border-box} body{margin:0;background:linear-gradient(135deg,#f9faf6,#eef5ee);color:var(--ink);font:14px/1.45 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial}
+a{color:var(--green);text-decoration:none} .layout{display:grid;grid-template-columns:270px 1fr;min-height:100vh} aside{position:sticky;top:0;height:100vh;padding:24px;background:#fbfcf8;border-right:1px solid var(--line)}
+.brand{display:flex;gap:12px;align-items:center;margin-bottom:26px} .logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#113b28,#32b475);box-shadow:var(--shadow)} .brand h1{font-size:18px;margin:0} .brand p{margin:2px 0 0;color:var(--muted);font-size:12px}
+nav a{display:block;padding:10px 12px;border-radius:12px;color:#314139;margin:3px 0} nav a:hover{background:#eef6ef} main{padding:30px;max-width:1480px;width:100%}
+.hero{background:radial-gradient(circle at top right,#dcf8e9,transparent 35%),#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow);margin-bottom:20px} .hero h2{font-size:38px;line-height:1.05;margin:0 0 10px;letter-spacing:-.04em} .hero p{max-width:760px;color:var(--muted);font-size:16px}
+.metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:22px} .metric{background:#f7faf6;border:1px solid var(--line);border-radius:18px;padding:16px} .metric b{font-size:28px;display:block} .metric span{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px} .profile-card,.panel,.dash-card,.stack-row{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--shadow)} .profile-card{border-top:4px solid var(--accent)}
+.card-top,.section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px} h2,h3{margin:0 0 8px;letter-spacing:-.02em} .eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--green);font-weight:800} .role{font-weight:700;color:#2a3b32}
+.status-chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#f8fbf7;border-radius:999px;padding:7px 10px;color:#405047;white-space:nowrap} .small{font-size:12px;padding:4px 8px} .dot{width:8px;height:8px;border-radius:999px;display:inline-block;background:#f59e0b} .dot.ok{background:#16a34a} .dot.warn{background:#f59e0b}
+.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0} .mini-grid div{background:#f8faf7;border:1px solid var(--line);border-radius:14px;padding:10px} .mini-grid b{display:block;font-size:11px;color:var(--muted);text-transform:uppercase} .mini-grid span{font-size:13px}
+details{margin-top:12px} summary{cursor:pointer;color:var(--green);font-weight:700} .path,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:#47564f;white-space:pre-wrap} .muted{color:var(--muted)}
+.panel{margin-top:18px} .table-wrap{overflow:auto} table{width:100%;border-collapse:collapse;font-size:13px} th{text-align:left;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em;border-bottom:1px solid var(--line);padding:10px} td{border-bottom:1px solid #edf1eb;padding:12px 10px;vertical-align:top} tr:hover td{background:#fbfdf9}
+.dash-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px} .button{border:1px solid #a7d7bd;background:#ecf8f0;border-radius:999px;padding:8px 12px;font-weight:800;color:#17623f} .flow{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0} .flow b{display:block;margin-bottom:6px}
+.pill{display:inline-block;background:#eef7ef;border:1px solid #d7eadc;color:#2c5a40;border-radius:999px;padding:4px 8px;margin:3px;font-size:11px} .pathpill{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#41534a;background:#f7f9f6;border-color:#e2e7df;border-radius:9px}
+.stack{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px} .stack-row ul{margin:8px 0 0;padding-left:18px} .script-group{margin:12px 0}
+.footer{color:var(--muted);text-align:center;margin:30px 0 10px} @media(max-width:1050px){.layout{grid-template-columns:1fr} aside{position:relative;height:auto} .grid,.dash-grid,.stack,.metrics{grid-template-columns:1fr} main{padding:18px}}
+</style></head><body><div class="layout"><aside><div class="brand"><div class="logo"></div><div><h1>Hermes Control Center</h1><p>Scout operating map</p></div></div><nav><a href="#overview">Overview</a><a href="#profiles">Profiles</a><a href="#dashboards">Dashboards & data</a><a href="#cron-personal">Scout cron</a><a href="#cron-heath">Heath cron</a><a href="#cron-paula">Paula cron</a><a href="#stack">Tech stack</a><a href="#scripts">Scripts</a></nav></aside><main>
+<section class="hero" id="overview"><div class="eyebrow">Generated 2026-08-11T21:37:50</div><h2>Your Hermes personal OS, in one place.</h2><p>A scan-first control center for the profiles, cron automations, dashboards, SOUL files, tech stack, storage locations, and data flows currently running across Scout, Heath, and Paula.</p><div class="metrics"><div class="metric"><b>3</b><span>profiles</span></div><div class="metric"><b>17</b><span>cron jobs</span></div><div class="metric"><b>15</b><span>active jobs</span></div><div class="metric"><b>4</b><span>dashboards/systems</span></div><div class="metric"><b>4</b><span>script-only jobs</span></div></div></section>
+<section id="profiles"><div class="section-head"><div><div class="eyebrow">Agents</div><h2>Profiles and identities</h2></div></div><div class="grid">
+    <article class="profile-card" style="--accent:#10b981">
+      <div class="card-top"><div><div class="eyebrow">personal profile</div><h3>Scout</h3></div><span class="status-chip"><span class="dot ok"></span> running</span></div>
+      <p class="role">Personal OS / orchestrator</p>
+      <p>General admin, Obsidian, Alpha Infra, CRM, email, schedules, household ops</p>
+      <div class="mini-grid">
+        <div><b>Model</b><span>openai-codex / gpt-5.5</span></div>
+        <div><b>Fallback</b><span>none</span></div>
+        <div><b>Telegram</b><span>@DangerousDavisBot · telegram: connected</span></div>
+        <div><b>Cron</b><span>10 active / 12 total</span></div>
+      </div>
+      <details><summary>SOUL file summary</summary><ul><li>Be helpful, direct, practical, and grounded in real execution.</li><li>Prefer doing useful work with tools over giving abstract advice.</li><li>Be concise by default, but thorough when the task needs analysis.</li><li>Admit uncertainty and verify against live sources/files/tools when possible.</li><li>Use David&#x27;s Obsidian vault as the durable memory layer for projects, people, ideas, daily reflections, health context, and business development.</li><li>Act as David&#x27;s personal operating-system assistant across family life, health tracking, career transition, AI consulting, content, CRM/networking, dashboards, and admin.</li><li>Help David move from finance/accounting and Stockbridge work toward practical AI consulting, freelance work, and personal AI products without losing financial/operator discipline.</li></ul><p class="path">/root/.hermes/profiles/personal/SOUL.md</p></details>
+    </article>
+    <article class="profile-card" style="--accent:#0ea5e9">
+      <div class="card-top"><div><div class="eyebrow">heath profile</div><h3>Heath</h3></div><span class="status-chip"><span class="dot ok"></span> running</span></div>
+      <p class="role">Health OS specialist</p>
+      <p>03 Health, diabetes trend support, WHOOP/Glooko/Health dashboard, clinician prep</p>
+      <div class="mini-grid">
+        <div><b>Model</b><span>openrouter / deepseek/deepseek-v4-flash</span></div>
+        <div><b>Fallback</b><span>github-copilot / gpt-4.1</span></div>
+        <div><b>Telegram</b><span>@Heath117Bot · telegram: connected</span></div>
+        <div><b>Cron</b><span>3 active / 3 total</span></div>
+      </div>
+      <details><summary>SOUL file summary</summary><ul><li>Focus on David&#x27;s health-related systems only: type 1 diabetes pattern support, Glooko/Dexcom data, WHOOP recovery/sleep/strain, workouts, body composition, supplies tracking, clinician prep, Health OS dashboard maintenance, and health admin.</li><li>Keep health workflows private, local, and operational. Prefer verified data pulls, dashboard updates, reminders, and clear trend summaries over abstract advice.</li><li>Use David&#x27;s Health OS dashboard and local health-data files as the working system of record when available.</li><li>Own and maintain David&#x27;s Obsidian health folder at `/root/obsidian/David OS/03 Health/`, including the health index, diabetes observations, supplies, DEXA, Sutter summaries, and links back to Health OS dashboard surfaces.</li><li>David has type 1 diabetes and uses Dexcom G7, Omnipod 5, and Humalog.</li><li>Never autonomously change insulin dosing, pump settings, treatment plans, medication, or urgent-care decisions.</li><li>Label analysis as observation/pattern support, not medical advice.</li></ul><p class="path">/root/.hermes/profiles/heath/SOUL.md</p></details>
+    </article>
+    <article class="profile-card" style="--accent:#f59e0b">
+      <div class="card-top"><div><div class="eyebrow">paula profile</div><h3>Paula</h3></div><span class="status-chip"><span class="dot ok"></span> running</span></div>
+      <p class="role">Parenting / kids specialist</p>
+      <p>04 Parenting, toddler activities, routines, family weekend ideas</p>
+      <div class="mini-grid">
+        <div><b>Model</b><span>github-copilot / gpt-4.1</span></div>
+        <div><b>Fallback</b><span>none</span></div>
+        <div><b>Telegram</b><span>@paula117_bot · telegram: connected</span></div>
+        <div><b>Cron</b><span>2 active / 2 total</span></div>
+      </div>
+      <details><summary>SOUL file summary</summary><ul><li>Focus on David&#x27;s parenting-related systems only: toddler activities, parenting playbooks, twin routines, behavior-pattern notes, books/frameworks, daycare/school prep, and family activity planning.</li><li>Be warm, practical, calm, and specific. Help David and Jennifer with usable ideas they can try when tired, busy, or dealing with twin toddler chaos.</li><li>Prefer concrete outputs: activity plans, scripts, routines, packing lists, rainy-day options, weekend ideas, reflection logs, and Obsidian updates.</li><li>Own and maintain David&#x27;s Obsidian parenting folder at `/root/obsidian/David OS/04 Parenting/`, including the parenting index, behavior playbooks, activity ideas, book takeaways, and parenting experiments.</li><li>Paula supports parenting, routine design, activity planning, and pattern reflection. Paula is not a pediatrician, therapist, child psychologist, or emergency adviser.</li><li>For medical, developmental, behavioral, or safety concerns, frame observations as questions to raise with pediatricians, teachers, daycare staff, or qualified professionals.</li><li>Do not shame, diagnose, or over-pathologize normal toddler behavior. Favor calm, evidence-informed, developmentally appropriate suggestions.</li></ul><p class="path">/root/.hermes/profiles/paula/SOUL.md</p></details>
+    </article></div></section>
+<section id="dashboards" class="panel"><div class="section-head"><div><div class="eyebrow">Systems</div><h2>Dashboards, sources, and data flow</h2></div></div><div class="dash-grid"><article class="dash-card">
+      <div class="card-top"><div><div class="eyebrow">Heath · Active</div><h3>Health OS Dashboard</h3></div><a class="button" href="https://dbunn117.github.io/health-dashboard/">Open</a></div>
+      <p>Heath cron runs health_dashboard_refresh.sh daily. It refreshes Glooko export chunks, regenerates SQLite + JSON, pulls WHOOP via whoop-pp-cli, then commits/pushes docs/data when changed.</p>
+      <div class="flow"><div><b>Inputs / stores</b><span class="pill pathpill">/root/health-data/glooko/raw</span><span class="pill pathpill">/root/health-data/dexa/dexa_measurements.json</span><span class="pill pathpill">/root/health-data/supplies/diabetes_supplies.json</span><span class="pill pathpill">/root/health-data/sutter/parsed/sutter_dashboard_metrics_2026-07-15.json</span><span class="pill pathpill">/root/health-dashboard/data/health.sqlite</span><span class="pill pathpill">/root/health-dashboard/data/dashboard_data.json</span></div><div><b>Outputs</b><span class="pill pathpill">/root/health-dashboard/docs/index.html</span><span class="pill pathpill">/root/health-dashboard/docs/data.json</span></div></div>
+      <p class="muted"><b>Data:</b> Data range 2024-01-23 → 2026-08-10; keys: generated_at, date_range, summary30, daily90, joined30, workouts30, hourly_glucose, analytics, dexa, supplies</p>
+      <p class="muted"><b>Privacy:</b> Raw glucose/insulin and health exports stay local/private; published docs use derived/sanitized dashboard JSON. Health advice remains observation only.</p>
+      <details><summary>Repo/status</summary><p class="path">/root/health-dashboard<br>https://github.com/dbunn117/health-dashboard.git</p><pre>M generate_dashboard.py</pre></details>
+    </article><article class="dash-card">
+      <div class="card-top"><div><div class="eyebrow">Scout · Active</div><h3>Podcast Digest / David Podcast OS</h3></div><a class="button" href="https://dbunn117.github.io/podcast-digest/">Open</a></div>
+      <p>Scout cron runs podcast_digest_collect.py daily. It reads RSS feeds, transcribes recent episodes locally, generates derived takeaways, writes Obsidian digests, updates static docs, and pushes changes.</p>
+      <div class="flow"><div><b>Inputs / stores</b><span class="pill pathpill">/root/podcast-digest/config.json</span><span class="pill pathpill">/root/podcast-digest/data/episodes.json</span><span class="pill pathpill">/root/podcast-digest/data/latest_digest.md</span><span class="pill pathpill">/root/podcast-digest/data/transcripts/*.txt/json</span><span class="pill pathpill">/root/obsidian/David OS/02 Personal/Media/Podcasts/Daily Digests/</span></div><div><b>Outputs</b><span class="pill pathpill">/root/podcast-digest/docs/index.html</span><span class="pill pathpill">/root/podcast-digest/docs/episodes.json</span></div></div>
+      <p class="muted"><b>Data:</b> Episodes indexed: 5235; podcasts: 8; top keys: episodes, ytd, podcasts, stats, errors</p>
+      <p class="muted"><b>Privacy:</b> Raw transcripts remain local by default; public dashboard gets episode metadata and derived summaries/takeaways.</p>
+      <details><summary>Repo/status</summary><p class="path">/root/podcast-digest<br>https://github.com/dbunn117/podcast-digest.git</p><pre>clean</pre></details>
+    </article><article class="dash-card">
+      <div class="card-top"><div><div class="eyebrow">Scout · Active</div><h3>Obsidian Lifecycle / Vault Health</h3></div><a class="button" href="Obsidian vault note: /root/obsidian/David OS/99 System/Vault Health.md">Open</a></div>
+      <p>Daily no-agent cron runs obsidian_lifecycle_sweep.sh, which audits allowed top-level folders, broken wikilinks, lifecycle/status drift, index coverage, and sensitive-term signals. It writes a report only when useful.</p>
+      <div class="flow"><div><b>Inputs / stores</b><span class="pill pathpill">/root/obsidian/David OS</span><span class="pill pathpill">/root/.hermes/profiles/personal/scripts/obsidian_lifecycle_audit.py</span></div><div><b>Outputs</b><span class="pill pathpill">/root/obsidian/David OS/99 System/Vault Health.md</span></div></div>
+      <p class="muted"><b>Data:</b> Non-destructive audit. Current desired top-level folders: Inbox, Daily Notes, Personal, Health, Parenting, Network, Work &amp; Career, Alpha Infra, System.</p>
+      <p class="muted"><b>Privacy:</b> Does not publish vault content. Flags drift, does not silently delete/archive active notes.</p>
+      <details><summary>Repo/status</summary><p class="path">/root/obsidian/David OS<br>local vault + Obsidian Headless Sync service</p><pre>local vault</pre></details>
+    </article><article class="dash-card">
+      <div class="card-top"><div><div class="eyebrow">Scout · New</div><h3>Hermes Control Center</h3></div><a class="button" href="/root/hermes-control-center/index.html">Open</a></div>
+      <p>Generated on demand by Scout from redacted profile config, cron metadata, gateway state, dashboard repos, and curated system notes.</p>
+      <div class="flow"><div><b>Inputs / stores</b><span class="pill pathpill">/root/.hermes/profiles/*/config.yaml</span><span class="pill pathpill">/root/.hermes/profiles/*/SOUL.md</span><span class="pill pathpill">/root/.hermes/profiles/*/cron/jobs.json</span><span class="pill pathpill">/root/.hermes/profiles/*/gateway_state.json</span><span class="pill pathpill">/root/health-dashboard</span><span class="pill pathpill">/root/podcast-digest</span><span class="pill pathpill">/root/obsidian/David OS</span></div><div><b>Outputs</b><span class="pill pathpill">/root/hermes-control-center/index.html</span><span class="pill pathpill">/root/hermes-control-center/control-center-data.json</span></div></div>
+      <p class="muted"><b>Data:</b> This page is the current operator map for the Hermes/Scout ecosystem.</p>
+      <p class="muted"><b>Privacy:</b> Secrets are redacted; prompts and tokens are not dumped into the public view.</p>
+      <details><summary>Repo/status</summary><p class="path">/root/hermes-control-center<br>local static artifact</p><pre>local artifact</pre></details>
+    </article></div></section>
+<section class="panel" id="cron-personal"><div class="section-head"><div><div class="eyebrow">Cron jobs</div><h2>Scout</h2></div><span>10 active</span></div><div class="table-wrap"><table><thead><tr><th>Status</th><th>Job</th><th>Schedule</th><th>Next run</th><th>Last</th><th>Deliver</th><th>Mode / skills</th></tr></thead><tbody><tr>
+          <td><span class="status-chip small"><span class="dot ok"></span>active</span></td>
+          <td><b>Scout AgentMail action queue</b><div class="muted">c8ca9fc353d0</div></td>
+          <td>every 30m</td><td>2026-08-11T21:54:43.246581-07:00</td><td>ok<div class="muted">2026-08-11T21:24:43.246581-07:00</div></td>
+          <td>local</td><td>agent<span class="pill">agentmail</span><span class="pill">google-workspace</span></td>
+        </tr><tr>
+          <td><span class="status-chip small"><span class="dot ok"></span>active</span></td>
+          <td><b>Daily Obsidian reflection prompt</b><div class="muted">6371ef431914</div></td>
+          <td>0 22 * * *</td><td>2026-08-11T22:00:00-07:00</td><td>ok<div class="muted">2026-08-10T22:00:24.747891-07:00</div></td>
+          <td>origin</td><td>agent</td>
+        </tr><tr>
+          <td><span class="status-chip small"><span class="dot ok"></span>active</span></td>
+          <td><b>Daily sports briefing email</b><div class="muted">908e0c760331</div></td>
+          <td>0 6 * * *</td><td>2026-08-12T06:00:00-07:00</td><td>ok<div class="muted">2026-08-11T06:03:32.088508-07:00</div></td>
+          <td>local</td><td>agent<span class="pill">agentmail</span><span class="pill">personalized-briefings</span></td>
+        </tr><tr>
+          <td><span class="status-chip small"><span class="dot ok"></span>active</span></td>
+          <td><b>Daily podcast digest email</b><div class="muted">d009212c9d15</div></td>
+          <td>30 7 * * *</td><td>2026-08-12T07:30:00-07:00</td><td>ok<div class="muted">2026-08-11T07:40:46.823945-07:00</div></td>
+          <td>local</td><td>agent<div class="muted">podcast_digest_collect.py</div><span class="pill">agentmail</span></td>
+        </tr><tr>
+          <td><span class="status-chip small"><span class="dot ok"></span>active</span></td>
+          <td><b>Daily Obsidian lifecycle sweep</b><div class="muted">9dc1e5f7c975</div></td>
+          <td>15 8 * * *</td><td>2026-08-12T08:15:00-07:00</td><td>ok<div class="muted">2026-08-11T08:15:25.714231-07:00</div></td>
+          <td>origin</td><td>script<div class="muted">obsidian_lifecycle_sweep.sh</div></td>
+        </tr><tr>
+          <td><span class="status-chip small"><span class="dot ok"></span>active</span></td>
+          <td><b>Daily email triage - Scout Gmail and AgentMail</b><div class="muted">fbfcdee20d2f</div></td>
+          <td>0 16 * * *</td><td>2026-08-12T16:00:00-07:00</td><td>ok<div class="muted">2026-08-11T16:00:54.670404-07:00</div></td>
+          <td>origin</td><td>agent<span class="pill">agentmail</span><span class="pill">google-workspace</span></td>
+        </tr><tr>
+          <td><span class="status-chip small"><span class="dot ok"></span>active</span></td>
+          <td><b>Reach back out to Collin Cochrane</b><div class="muted">d9a3389c1802</div></td>
+          <td>once at 2026-08-15 16:00</td><td>2026-08-15T16:00:00+00:00</td><td>not run<div class="muted"></div></td>
+          <td>origin</td><td>agent</td>
+        </tr><tr>
+          <td><span class="status-chip small"><span class="dot ok"></span>active</span></td>
+          <td><b>Weekly Peaches ear cleaning email reminder</b><div class="muted">b1cb7ec4a4b0</div></td>
+          <td>30 2 * * 2</td><td>2026-08-18T02:30:00-07:00</td><td>ok<div class="muted">2026-08-11T02:30:33.068908-07:00</div></td>
+          <td>local</td><td>agent<span class="pill">agentmail</span></td>
+        </tr><tr>
+          <td><span class="status-chip small"><span class="dot ok"></span>active</span></td>
+          <td><b>Monthly dog heart medication reminder</b><div class="muted">8b284bc1a523</div></td>
+          <td>0 16 23 * *</td><td>2026-08-23T16:00:00+00:00</td><td>ok<div class="muted">2026-07-23T16:00:59.986366+00:00</div></td>
+          <td>local</td><td>agent<span class="pill">agentmail</span></td>
+        </tr><tr>
+          <td><span class="status-chip small"><span class="dot ok"></span>active</span></td>
+          <td><b>Alpha Infra CA Statement of Information reminder</b><div class="muted">b0a0e6801bbe</div></td>
+          <td>once at 2026-10-01 16:00</td><td>2026-10-01T16:00:00+00:00</td><td>not run<div class="muted"></div></td>
+          <td>origin</td><td>agent</td>
+        </tr><tr>
+          <td><span class="status-chip small"><span class="dot warn"></span>paused</span></td>
+          <td><b>Daily Health OS dashboard data refresh</b><div class="muted">7915b5a6b404</div></td>
+          <td>0 14 * * *</td><td>2026-07-25T14:00:00+00:00</td><td>not run<div class="muted"></div></td>
+          <td>local</td><td>script<div class="muted">health_dashboard_refresh.sh</div></td>
+        </tr><tr>
+          <td><span class="status-chip small"><span class="dot warn"></span>paused</span></td>
+          <td><b>Weekly WHOOP health report email</b><div class="muted">5557db09dcfa</div></td>
+          <td>0 15 * * 6</td><td>2026-07-25T15:00:00+00:00</td><td>ok<div class="muted">2026-07-18T15:05:08.207768+00:00</div></td>
+          <td>local</td><td>agent<span class="pill">personal-health-data-integrations</span><span class="pill">pp-whoop</span><span class="pill">agentmail</span></td>
+        </tr></tbody></table></div></section><section class="panel" id="cron-heath"><div class="section-head"><div><div class="eyebrow">Cron jobs</div><h2>Heath</h2></div><span>3 active</span></div><div class="table-wrap"><table><thead><tr><th>Status</th><th>Job</th><th>Schedule</th><th>Next run</th><th>Last</th><th>Deliver</th><th>Mode / skills</th></tr></thead><tbody><tr>
+          <td><span class="status-chip small"><span class="dot ok"></span>active</span></td>
+          <td><b>Daily Health OS dashboard refresh</b><div class="muted">8e6921f43b95</div></td>
+          <td>0 7 * * *</td><td>2026-08-12T07:00:00-07:00</td><td>ok<div class="muted">2026-08-11T07:03:32.050023-07:00</div></td>
+          <td>telegram</td><td>script<div class="muted">health_dashboard_refresh.sh</div></td>
+        </tr><tr>
+          <td><span class="status-chip small"><span class="dot ok"></span>active</span></td>
+          <td><b>Overnight Hypo Check + Morning Brief</b><div class="muted">64b5fd46cffb</div></td>
+          <td>15 7 * * *</td><td>2026-08-12T07:15:00-07:00</td><td>ok<div class="muted">2026-08-11T07:17:12.153773-07:00</div></td>
+          <td>origin</td><td>agent<span class="pill">health/ladder-workout-video-ingest</span><span class="pill">health/health-nutrition-macro-tracking</span></td>
+        </tr><tr>
+          <td><span class="status-chip small"><span class="dot ok"></span>active</span></td>
+          <td><b>Weekly Health OS report</b><div class="muted">af2804f5ef75</div></td>
+          <td>0 8 * * 6</td><td>2026-08-15T08:00:00-07:00</td><td>ok<div class="muted">2026-08-08T08:00:18.250354-07:00</div></td>
+          <td>telegram</td><td>script<div class="muted">weekly_health_report.py</div></td>
+        </tr></tbody></table></div></section><section class="panel" id="cron-paula"><div class="section-head"><div><div class="eyebrow">Cron jobs</div><h2>Paula</h2></div><span>2 active</span></div><div class="table-wrap"><table><thead><tr><th>Status</th><th>Job</th><th>Schedule</th><th>Next run</th><th>Last</th><th>Deliver</th><th>Mode / skills</th></tr></thead><tbody><tr>
+          <td><span class="status-chip small"><span class="dot ok"></span>active</span></td>
+          <td><b>Toddler Twin Evening Activity &amp; Toy List</b><div class="muted">d49e02d15787</div></td>
+          <td>0 18 * * 1,2,3</td><td>2026-08-12T18:00:00-07:00</td><td>ok<div class="muted">2026-08-11T18:02:46.343770-07:00</div></td>
+          <td>origin</td><td>agent</td>
+        </tr><tr>
+          <td><span class="status-chip small"><span class="dot ok"></span>active</span></td>
+          <td><b>Paula&#x27;s Local Weekend Activities &amp; Weather Briefing</b><div class="muted">83b4ca5e12c5</div></td>
+          <td>0 20 * * 4</td><td>2026-08-13T20:00:00-07:00</td><td>ok<div class="muted">2026-08-06T20:01:41.034002-07:00</div></td>
+          <td>origin</td><td>agent</td>
+        </tr></tbody></table></div></section>
+<section id="stack" class="panel"><div class="section-head"><div><div class="eyebrow">Infrastructure</div><h2>Tech stack</h2></div></div><div class="stack"><article class="stack-row"><h3>Agent runtime</h3><ul><li>Hermes Agent profiles: personal, heath, paula</li><li>Gateway adapters: Telegram connected for all three profiles</li><li>Cron scheduler per profile</li><li>Skills + memory under profile-specific ~/.hermes/profiles/&lt;name&gt;/</li></ul></article><article class="stack-row"><h3>Models</h3><ul><li>Scout/personal: OpenAI Codex gpt-5.5</li><li>Heath: OpenRouter deepseek/deepseek-v4-flash with GitHub Copilot gpt-4.1 fallback</li><li>Paula: GitHub Copilot gpt-4.1</li></ul></article><article class="stack-row"><h3>Tools &amp; integrations</h3><ul><li>AgentMail inbox scout117@agentmail.to</li><li>Google Workspace OAuth configured but currently needs re-auth for Gmail search</li><li>Browser backend set to browser-use, API key/provider not yet verified active</li><li>WHOOP via whoop-pp-cli using Heath isolated home</li><li>Glooko export refresh for Dexcom/Omnipod data</li></ul></article><article class="stack-row"><h3>Storage</h3><ul><li>Obsidian vault: /root/obsidian/David OS</li><li>Health private data: /root/health-data and /root/health-dashboard/data</li><li>Podcast private data: /root/podcast-digest/data</li><li>Hermes config/state: /root/.hermes/profiles/&lt;profile&gt;/</li><li>Published static dashboards via GitHub Pages docs/ folders</li></ul></article></div></section>
+<section id="scripts" class="panel"><div class="section-head"><div><div class="eyebrow">Automation code</div><h2>Scripts by profile</h2></div></div><div class="script-group"><h3>Scout</h3><span class="pill pathpill">/root/.hermes/profiles/personal/scripts/firecrawl_scrape.py</span><span class="pill pathpill">/root/.hermes/profiles/personal/scripts/glooko_export_refresh.py</span><span class="pill pathpill">/root/.hermes/profiles/personal/scripts/health_dashboard_refresh.sh</span><span class="pill pathpill">/root/.hermes/profiles/personal/scripts/obsidian_lifecycle_audit.py</span><span class="pill pathpill">/root/.hermes/profiles/personal/scripts/obsidian_lifecycle_sweep.sh</span><span class="pill pathpill">/root/.hermes/profiles/personal/scripts/podcast_digest_collect.py</span><span class="pill pathpill">/root/.hermes/profiles/personal/scripts/watch_1104_burke_ln.py</span></div><div class="script-group"><h3>Heath</h3><span class="pill pathpill">/root/.hermes/profiles/heath/scripts/glooko_export_refresh.py</span><span class="pill pathpill">/root/.hermes/profiles/heath/scripts/health_dashboard_refresh.sh</span><span class="pill pathpill">/root/.hermes/profiles/heath/scripts/overnight_hypo_check.py</span><span class="pill pathpill">/root/.hermes/profiles/heath/scripts/weekly_health_report.py</span></div><div class="script-group"><h3>Paula</h3></div></section>
+<div class="footer">Generated by Scout. Secrets, tokens, and raw prompt bodies are intentionally excluded.</div>
+</main></div></body></html>
