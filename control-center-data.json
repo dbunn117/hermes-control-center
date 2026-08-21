@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T22:40:46Z",
+  "generated_at": "2026-08-21T22:41:10Z",
   "profiles": [
     {
       "display": "Heath",
@@ -333,6 +333,26 @@
           "no_agent": false,
           "model_snapshot": "deepseek/deepseek-v4-flash",
           "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Daily Hermes Control Center refresh",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 7 * * *",
+            "display": "0 7 * * *"
+          },
+          "next_run_at": "2026-08-22T07:00:00-07:00",
+          "last_run_at": null,
+          "last_status": null,
+          "deliver": "local",
+          "skills": [],
+          "script": "refresh_control_center.py",
+          "no_agent": true,
+          "model_snapshot": null,
+          "provider_snapshot": null
         },
         {
           "id": "",

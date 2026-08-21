@@ -63,11 +63,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 <div class="container">
     <div class="sidebar">
         <h1>Hermes Control Center</h1>
-        <p class="version">Generated 2026-08-21T22:40</p>
+        <p class="version">Generated 2026-08-21T22:41</p>
         <div class="kpi-summary">
             <div class="kpi-item"><span>Profiles</span><span class="val">4</span></div>
-            <div class="kpi-item"><span>Cron Jobs</span><span class="val">17</span></div>
-            <div class="kpi-item"><span>Active Jobs</span><span class="val">15</span></div>
+            <div class="kpi-item"><span>Cron Jobs</span><span class="val">18</span></div>
+            <div class="kpi-item"><span>Active Jobs</span><span class="val">16</span></div>
             <div class="kpi-item"><span>Paused Jobs</span><span class="val">2</span></div>
             <div class="kpi-item"><span>Connected Gateways</span><span class="val">3</span></div>
             <div class="kpi-item"><span>Dashboards</span><span class="val">4</span></div>
@@ -84,7 +84,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
     <div class="main">
         <div class="header">
             <h1>Operator Dashboard</h1>
-            <span class="stale">Last updated: 2026-08-21T22:40:46</span>
+            <span class="stale">Last updated: 2026-08-21T22:41:10</span>
         </div>
         <div class="profile-card">
             <div class="profile-header" style="border-left: 4px solid #6366f1;">
@@ -191,9 +191,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
                 </div>
             </div>
             <div class="kpi-row">
-                <div class="kpi"><span class="kpi-val">10</span> Active Jobs</div>
+                <div class="kpi"><span class="kpi-val">11</span> Active Jobs</div>
                 <div class="kpi"><span class="kpi-val">2</span> Paused</div>
-                <div class="kpi"><span class="kpi-val">12</span> Total</div>
+                <div class="kpi"><span class="kpi-val">13</span> Total</div>
                 <div class="kpi"><span class="kpi-val">1</span> Active Agents</div>
             </div>
             <table class="job-table">
@@ -227,6 +227,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
                 <td>2026-08-22T06:00</td>
                 <td><span class="badge badge-green">ok</span></td>
                 <td><code>deepseek/deepseek-v4-flash</code></td>
+                <td>local</td>
+            </tr><tr>
+                <td><span class="state-active">▶</span> Daily Hermes Control Center refresh</td>
+                <td><code>{'kind': 'cron', 'expr': '0 7 * * *', 'display': '0 7 * * *'}</code></td>
+                <td>2026-08-22T07:00</td>
+                <td><span class="badge badge-gray">never</span></td>
+                <td><code>script</code></td>
                 <td>local</td>
             </tr><tr>
                 <td><span class="state-active">▶</span> Daily podcast digest email</td>
