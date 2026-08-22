@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T22:41:10Z",
+  "generated_at": "2026-08-22T14:00:48Z",
   "profiles": [
     {
       "display": "Heath",
@@ -32,7 +32,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-21T06:42:53.347771+00:00",
+        "updated_at": "2026-08-22T05:49:01.103778+00:00",
         "active_agents": 0,
         "pid": 1137241,
         "platforms": {
@@ -232,8 +232,8 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-21T22:38:25.065788+00:00",
-        "active_agents": 1,
+        "updated_at": "2026-08-22T05:47:41.600790+00:00",
+        "active_agents": 0,
         "pid": 575649,
         "platforms": {
           "telegram": {
@@ -245,115 +245,6 @@
         }
       },
       "jobs": [
-        {
-          "id": "",
-          "name": "Scout AgentMail action queue",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "interval",
-            "minutes": 30,
-            "display": "every 30m"
-          },
-          "next_run_at": "2026-08-21T15:56:05.129055-07:00",
-          "last_run_at": "2026-08-21T15:26:05.129055-07:00",
-          "last_status": "ok",
-          "deliver": "local",
-          "skills": [
-            "agentmail",
-            "google-workspace"
-          ],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": "deepseek/deepseek-v4-flash",
-          "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
-          "name": "Daily email triage - Scout Gmail and AgentMail",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 16 * * *",
-            "display": "0 16 * * *"
-          },
-          "next_run_at": "2026-08-21T16:00:00-07:00",
-          "last_run_at": "2026-08-20T16:02:21.735319-07:00",
-          "last_status": "ok",
-          "deliver": "origin",
-          "skills": [
-            "agentmail",
-            "google-workspace"
-          ],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": "deepseek/deepseek-v4-flash",
-          "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
-          "name": "Daily Obsidian reflection prompt",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 22 * * *",
-            "display": "0 22 * * *"
-          },
-          "next_run_at": "2026-08-21T22:00:00-07:00",
-          "last_run_at": "2026-08-20T22:00:44.590597-07:00",
-          "last_status": "ok",
-          "deliver": "origin",
-          "skills": [],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": "deepseek/deepseek-v4-flash",
-          "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
-          "name": "Daily sports briefing email",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 6 * * *",
-            "display": "0 6 * * *"
-          },
-          "next_run_at": "2026-08-22T06:00:00-07:00",
-          "last_run_at": "2026-08-21T06:03:44.283299-07:00",
-          "last_status": "ok",
-          "deliver": "local",
-          "skills": [
-            "agentmail",
-            "personalized-briefings"
-          ],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": "deepseek/deepseek-v4-flash",
-          "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
-          "name": "Daily Hermes Control Center refresh",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 7 * * *",
-            "display": "0 7 * * *"
-          },
-          "next_run_at": "2026-08-22T07:00:00-07:00",
-          "last_run_at": null,
-          "last_status": null,
-          "deliver": "local",
-          "skills": [],
-          "script": "refresh_control_center.py",
-          "no_agent": true,
-          "model_snapshot": null,
-          "provider_snapshot": null
-        },
         {
           "id": "",
           "name": "Daily podcast digest email",
@@ -372,6 +263,29 @@
             "agentmail"
           ],
           "script": "podcast_digest_collect.py",
+          "no_agent": false,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Scout AgentMail action queue",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "interval",
+            "minutes": 30,
+            "display": "every 30m"
+          },
+          "next_run_at": "2026-08-22T07:30:41.551748-07:00",
+          "last_run_at": "2026-08-22T07:00:41.551748-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [
+            "agentmail",
+            "google-workspace"
+          ],
+          "script": null,
           "no_agent": false,
           "model_snapshot": "deepseek/deepseek-v4-flash",
           "provider_snapshot": "openrouter"
@@ -413,6 +327,92 @@
           "skills": [],
           "script": null,
           "no_agent": false,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        },
+        {
+          "id": "",
+          "name": "Daily email triage - Scout Gmail and AgentMail",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 16 * * *",
+            "display": "0 16 * * *"
+          },
+          "next_run_at": "2026-08-22T16:00:00-07:00",
+          "last_run_at": "2026-08-21T16:02:14.774673-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [
+            "agentmail",
+            "google-workspace"
+          ],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Daily Obsidian reflection prompt",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 22 * * *",
+            "display": "0 22 * * *"
+          },
+          "next_run_at": "2026-08-22T22:00:00-07:00",
+          "last_run_at": "2026-08-21T22:00:49.300250-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Daily sports briefing email",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 6 * * *",
+            "display": "0 6 * * *"
+          },
+          "next_run_at": "2026-08-23T06:00:00-07:00",
+          "last_run_at": "2026-08-22T06:05:01.618905-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [
+            "agentmail",
+            "personalized-briefings"
+          ],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Daily Hermes Control Center refresh",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 7 * * *",
+            "display": "0 7 * * *"
+          },
+          "next_run_at": "2026-08-23T07:00:00-07:00",
+          "last_run_at": "2026-08-21T15:41:12.091272-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [],
+          "script": "refresh_control_center.py",
+          "no_agent": true,
           "model_snapshot": null,
           "provider_snapshot": null
         },
