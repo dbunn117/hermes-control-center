@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T14:00:48Z",
+  "generated_at": "2026-08-23T14:00:04Z",
   "profiles": [
     {
       "display": "Heath",
@@ -32,7 +32,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-22T05:49:01.103778+00:00",
+        "updated_at": "2026-08-23T02:16:31.576493+00:00",
         "active_agents": 0,
         "pid": 1137241,
         "platforms": {
@@ -57,32 +57,12 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-08-22T08:00:00-07:00",
-          "last_run_at": "2026-08-21T08:03:20.551054-07:00",
+          "next_run_at": "2026-08-23T08:00:00-07:00",
+          "last_run_at": "2026-08-22T08:03:14.704742-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
           "script": "health_dashboard_refresh.sh",
-          "no_agent": true,
-          "model_snapshot": null,
-          "provider_snapshot": null
-        },
-        {
-          "id": "",
-          "name": "Weekly Health OS report",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 8 * * 6",
-            "display": "0 8 * * 6"
-          },
-          "next_run_at": "2026-08-22T08:00:00-07:00",
-          "last_run_at": "2026-08-15T08:00:42.115996-07:00",
-          "last_status": "ok",
-          "deliver": "telegram",
-          "skills": [],
-          "script": "weekly_health_report.py",
           "no_agent": true,
           "model_snapshot": null,
           "provider_snapshot": null
@@ -97,8 +77,8 @@
             "expr": "5 8 * * *",
             "display": "5 8 * * *"
           },
-          "next_run_at": "2026-08-22T08:05:00-07:00",
-          "last_run_at": "2026-08-21T08:08:32.444697-07:00",
+          "next_run_at": "2026-08-23T08:05:00-07:00",
+          "last_run_at": "2026-08-22T08:07:24.887538-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -108,6 +88,26 @@
           ],
           "script": null,
           "no_agent": false,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        },
+        {
+          "id": "",
+          "name": "Weekly Health OS report",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 8 * * 6",
+            "display": "0 8 * * 6"
+          },
+          "next_run_at": "2026-08-29T08:00:00-07:00",
+          "last_run_at": "2026-08-22T08:00:36.694626-07:00",
+          "last_status": "ok",
+          "deliver": "telegram",
+          "skills": [],
+          "script": "weekly_health_report.py",
+          "no_agent": true,
           "model_snapshot": null,
           "provider_snapshot": null
         }
@@ -232,7 +232,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-22T05:47:41.600790+00:00",
+        "updated_at": "2026-08-23T03:12:44.671448+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -247,28 +247,6 @@
       "jobs": [
         {
           "id": "",
-          "name": "Daily podcast digest email",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "30 7 * * *",
-            "display": "30 7 * * *"
-          },
-          "next_run_at": "2026-08-22T07:30:00-07:00",
-          "last_run_at": "2026-08-21T07:41:06.212304-07:00",
-          "last_status": "ok",
-          "deliver": "local",
-          "skills": [
-            "agentmail"
-          ],
-          "script": "podcast_digest_collect.py",
-          "no_agent": false,
-          "model_snapshot": "deepseek/deepseek-v4-flash",
-          "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
           "name": "Scout AgentMail action queue",
           "active": true,
           "state": "scheduled",
@@ -277,8 +255,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-08-22T07:30:41.551748-07:00",
-          "last_run_at": "2026-08-22T07:00:41.551748-07:00",
+          "next_run_at": "2026-08-23T07:22:57.575496-07:00",
+          "last_run_at": "2026-08-23T06:52:57.575496-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -286,6 +264,28 @@
             "google-workspace"
           ],
           "script": null,
+          "no_agent": false,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Daily podcast digest email",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "30 7 * * *",
+            "display": "30 7 * * *"
+          },
+          "next_run_at": "2026-08-23T07:30:00-07:00",
+          "last_run_at": "2026-08-22T07:41:59.413127-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [
+            "agentmail"
+          ],
+          "script": "podcast_digest_collect.py",
           "no_agent": false,
           "model_snapshot": "deepseek/deepseek-v4-flash",
           "provider_snapshot": "openrouter"
@@ -300,8 +300,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-08-22T08:15:00-07:00",
-          "last_run_at": "2026-08-21T08:15:39.374759-07:00",
+          "next_run_at": "2026-08-23T08:15:00-07:00",
+          "last_run_at": "2026-08-22T08:15:50.687328-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -320,8 +320,8 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-08-22T09:00:00-07:00",
-          "last_run_at": "2026-08-21T09:01:34.376992-07:00",
+          "next_run_at": "2026-08-23T09:00:00-07:00",
+          "last_run_at": "2026-08-22T09:01:28.888733-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -340,8 +340,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-08-22T16:00:00-07:00",
-          "last_run_at": "2026-08-21T16:02:14.774673-07:00",
+          "next_run_at": "2026-08-23T16:00:00-07:00",
+          "last_run_at": "2026-08-22T16:01:37.821708-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -363,8 +363,8 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-08-22T22:00:00-07:00",
-          "last_run_at": "2026-08-21T22:00:49.300250-07:00",
+          "next_run_at": "2026-08-23T22:00:00-07:00",
+          "last_run_at": "2026-08-22T22:01:15.259094-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -383,8 +383,8 @@
             "expr": "0 6 * * *",
             "display": "0 6 * * *"
           },
-          "next_run_at": "2026-08-23T06:00:00-07:00",
-          "last_run_at": "2026-08-22T06:05:01.618905-07:00",
+          "next_run_at": "2026-08-24T06:00:00-07:00",
+          "last_run_at": "2026-08-23T06:02:21.152793-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -406,8 +406,8 @@
             "expr": "0 7 * * *",
             "display": "0 7 * * *"
           },
-          "next_run_at": "2026-08-23T07:00:00-07:00",
-          "last_run_at": "2026-08-21T15:41:12.091272-07:00",
+          "next_run_at": "2026-08-24T07:00:00-07:00",
+          "last_run_at": "2026-08-22T07:00:50.388763-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [],
@@ -415,28 +415,6 @@
           "no_agent": true,
           "model_snapshot": null,
           "provider_snapshot": null
-        },
-        {
-          "id": "",
-          "name": "Monthly dog heart medication reminder",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 16 23 * *",
-            "display": "0 16 23 * *"
-          },
-          "next_run_at": "2026-08-23T16:00:00+00:00",
-          "last_run_at": "2026-07-23T16:00:59.986366+00:00",
-          "last_status": "ok",
-          "deliver": "local",
-          "skills": [
-            "agentmail"
-          ],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": "deepseek/deepseek-v4-flash",
-          "provider_snapshot": "openrouter"
         },
         {
           "id": "",
@@ -452,6 +430,28 @@
           "last_run_at": "2026-08-18T02:31:29.373255-07:00",
           "last_status": "ok",
           "deliver": "local",
+          "skills": [
+            "agentmail"
+          ],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Monthly dog heart medication reminder",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 16 22 * *",
+            "display": "0 16 22 * *"
+          },
+          "next_run_at": "2026-09-22T16:00:00-07:00",
+          "last_run_at": "2026-08-22T16:01:18.588649-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
           "skills": [
             "agentmail"
           ],
@@ -566,7 +566,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "d5787ed Refresh health dashboard data",
+      "last_commit": "de92796 Fix bolus triplication \u2014 add PRIMARY KEY to boluses table, use INSERT OR REPLACE",
       "active": "EXISTS"
     },
     {
@@ -574,7 +574,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "6f42a14 Refresh podcast digest data",
+      "last_commit": "1b1c724 Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
