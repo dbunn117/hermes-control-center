@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T14:00:04Z",
+  "generated_at": "2026-08-24T14:00:17Z",
   "profiles": [
     {
       "display": "Heath",
@@ -32,7 +32,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-23T02:16:31.576493+00:00",
+        "updated_at": "2026-08-23T20:38:23.040693+00:00",
         "active_agents": 0,
         "pid": 1137241,
         "platforms": {
@@ -57,8 +57,8 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-08-23T08:00:00-07:00",
-          "last_run_at": "2026-08-22T08:03:14.704742-07:00",
+          "next_run_at": "2026-08-24T08:00:00-07:00",
+          "last_run_at": "2026-08-23T08:03:45.749259-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
@@ -77,8 +77,8 @@
             "expr": "5 8 * * *",
             "display": "5 8 * * *"
           },
-          "next_run_at": "2026-08-23T08:05:00-07:00",
-          "last_run_at": "2026-08-22T08:07:24.887538-07:00",
+          "next_run_at": "2026-08-24T08:05:00-07:00",
+          "last_run_at": "2026-08-23T08:09:00.605305-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -144,7 +144,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-21T06:01:32.683057+00:00",
+        "updated_at": "2026-08-24T05:33:49.014207+00:00",
         "active_agents": 0,
         "pid": 1029357,
         "platforms": {
@@ -232,7 +232,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-23T03:12:44.671448+00:00",
+        "updated_at": "2026-08-24T03:08:37.905389+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -255,8 +255,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-08-23T07:22:57.575496-07:00",
-          "last_run_at": "2026-08-23T06:52:57.575496-07:00",
+          "next_run_at": "2026-08-24T07:09:33.694127-07:00",
+          "last_run_at": "2026-08-24T06:39:33.694127-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -278,8 +278,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-08-23T07:30:00-07:00",
-          "last_run_at": "2026-08-22T07:41:59.413127-07:00",
+          "next_run_at": "2026-08-24T07:30:00-07:00",
+          "last_run_at": "2026-08-23T07:35:58.624078-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -300,8 +300,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-08-23T08:15:00-07:00",
-          "last_run_at": "2026-08-22T08:15:50.687328-07:00",
+          "next_run_at": "2026-08-24T08:15:00-07:00",
+          "last_run_at": "2026-08-23T08:15:07.622725-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -320,8 +320,8 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-08-23T09:00:00-07:00",
-          "last_run_at": "2026-08-22T09:01:28.888733-07:00",
+          "next_run_at": "2026-08-24T09:00:00-07:00",
+          "last_run_at": "2026-08-23T09:00:53.074248-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -340,8 +340,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-08-23T16:00:00-07:00",
-          "last_run_at": "2026-08-22T16:01:37.821708-07:00",
+          "next_run_at": "2026-08-24T16:00:00-07:00",
+          "last_run_at": "2026-08-23T16:00:48.461130-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -363,8 +363,8 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-08-23T22:00:00-07:00",
-          "last_run_at": "2026-08-22T22:01:15.259094-07:00",
+          "next_run_at": "2026-08-24T22:00:00-07:00",
+          "last_run_at": "2026-08-23T22:00:23.221127-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -372,49 +372,6 @@
           "no_agent": false,
           "model_snapshot": "deepseek/deepseek-v4-flash",
           "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
-          "name": "Daily sports briefing email",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 6 * * *",
-            "display": "0 6 * * *"
-          },
-          "next_run_at": "2026-08-24T06:00:00-07:00",
-          "last_run_at": "2026-08-23T06:02:21.152793-07:00",
-          "last_status": "ok",
-          "deliver": "local",
-          "skills": [
-            "agentmail",
-            "personalized-briefings"
-          ],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": "deepseek/deepseek-v4-flash",
-          "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
-          "name": "Daily Hermes Control Center refresh",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 7 * * *",
-            "display": "0 7 * * *"
-          },
-          "next_run_at": "2026-08-24T07:00:00-07:00",
-          "last_run_at": "2026-08-22T07:00:50.388763-07:00",
-          "last_status": "ok",
-          "deliver": "local",
-          "skills": [],
-          "script": "refresh_control_center.py",
-          "no_agent": true,
-          "model_snapshot": null,
-          "provider_snapshot": null
         },
         {
           "id": "",
@@ -437,6 +394,49 @@
           "no_agent": false,
           "model_snapshot": "deepseek/deepseek-v4-flash",
           "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Daily sports briefing email",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 6 * * *",
+            "display": "0 6 * * *"
+          },
+          "next_run_at": "2026-08-25T06:00:00-07:00",
+          "last_run_at": "2026-08-24T06:03:51.530812-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [
+            "agentmail",
+            "personalized-briefings"
+          ],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Daily Hermes Control Center refresh",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 7 * * *",
+            "display": "0 7 * * *"
+          },
+          "next_run_at": "2026-08-25T07:00:00-07:00",
+          "last_run_at": "2026-08-23T07:00:06.975478-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [],
+          "script": "refresh_control_center.py",
+          "no_agent": true,
+          "model_snapshot": null,
+          "provider_snapshot": null
         },
         {
           "id": "",
@@ -566,7 +566,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "de92796 Fix bolus triplication \u2014 add PRIMARY KEY to boluses table, use INSERT OR REPLACE",
+      "last_commit": "869743d Fix Raw Power date from Aug 21 \u2192 Aug 22, correct recovery data (90 green)",
       "active": "EXISTS"
     },
     {
@@ -574,7 +574,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "1b1c724 Refresh podcast digest data",
+      "last_commit": "c156eb9 Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
