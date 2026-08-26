@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T14:00:32Z",
+  "generated_at": "2026-08-26T14:00:46Z",
   "profiles": [
     {
       "display": "Heath",
@@ -32,7 +32,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-24T23:05:57.575505+00:00",
+        "updated_at": "2026-08-26T06:58:25.222329+00:00",
         "active_agents": 0,
         "pid": 1137241,
         "platforms": {
@@ -57,8 +57,8 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-08-25T08:00:00-07:00",
-          "last_run_at": "2026-08-24T08:03:24.353782-07:00",
+          "next_run_at": "2026-08-26T08:00:00-07:00",
+          "last_run_at": "2026-08-25T08:04:37.996596-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
@@ -77,8 +77,8 @@
             "expr": "5 8 * * *",
             "display": "5 8 * * *"
           },
-          "next_run_at": "2026-08-25T08:05:00-07:00",
-          "last_run_at": "2026-08-24T08:06:49.401423-07:00",
+          "next_run_at": "2026-08-26T08:05:00-07:00",
+          "last_run_at": "2026-08-25T08:07:36.609571-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -144,7 +144,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-25T05:43:36.138138+00:00",
+        "updated_at": "2026-08-25T16:17:49.293550+00:00",
         "active_agents": 0,
         "pid": 1029357,
         "platforms": {
@@ -169,8 +169,8 @@
             "expr": "0 18 * * 1,2,3",
             "display": "0 18 * * 1,2,3"
           },
-          "next_run_at": "2026-08-25T18:00:00-07:00",
-          "last_run_at": "2026-08-24T18:02:50.023526-07:00",
+          "next_run_at": "2026-08-26T18:00:00-07:00",
+          "last_run_at": "2026-08-25T18:06:27.715530-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -232,7 +232,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-25T05:41:54.607072+00:00",
+        "updated_at": "2026-08-26T06:17:06.693061+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -255,8 +255,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-08-25T07:02:08.706981-07:00",
-          "last_run_at": "2026-08-25T06:32:08.706981-07:00",
+          "next_run_at": "2026-08-26T07:23:35.657606-07:00",
+          "last_run_at": "2026-08-26T06:53:35.657606-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -278,8 +278,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-08-25T07:30:00-07:00",
-          "last_run_at": "2026-08-24T07:38:09.867673-07:00",
+          "next_run_at": "2026-08-26T07:30:00-07:00",
+          "last_run_at": "2026-08-25T07:42:37.092474-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -300,8 +300,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-08-25T08:15:00-07:00",
-          "last_run_at": "2026-08-24T08:15:20.142327-07:00",
+          "next_run_at": "2026-08-26T08:15:00-07:00",
+          "last_run_at": "2026-08-25T08:15:34.976461-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -320,8 +320,8 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-08-25T09:00:00-07:00",
-          "last_run_at": "2026-08-24T09:00:44.958913-07:00",
+          "next_run_at": "2026-08-26T09:00:00-07:00",
+          "last_run_at": "2026-08-25T09:01:32.128057-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -340,8 +340,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-08-25T16:00:00-07:00",
-          "last_run_at": "2026-08-24T16:01:00.677139-07:00",
+          "next_run_at": "2026-08-26T16:00:00-07:00",
+          "last_run_at": "2026-08-25T16:01:06.498287-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -363,8 +363,8 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-08-25T22:00:00-07:00",
-          "last_run_at": "2026-08-24T22:00:35.872963-07:00",
+          "next_run_at": "2026-08-26T22:00:00-07:00",
+          "last_run_at": "2026-08-25T22:01:03.666365-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -383,8 +383,8 @@
             "expr": "0 6 * * *",
             "display": "0 6 * * *"
           },
-          "next_run_at": "2026-08-26T06:00:00-07:00",
-          "last_run_at": "2026-08-25T06:05:26.080152-07:00",
+          "next_run_at": "2026-08-27T06:00:00-07:00",
+          "last_run_at": "2026-08-26T06:05:40.442520-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -406,8 +406,8 @@
             "expr": "0 7 * * *",
             "display": "0 7 * * *"
           },
-          "next_run_at": "2026-08-26T07:00:00-07:00",
-          "last_run_at": "2026-08-24T07:00:19.875779-07:00",
+          "next_run_at": "2026-08-27T07:00:00-07:00",
+          "last_run_at": "2026-08-25T07:00:35.022509-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [],
@@ -566,7 +566,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "0dd6387 Add Aug 24 workout - Arm Pump (full body, 12K lb, Week 4 opener)",
+      "last_commit": "fdfedfe Fix Aug 25 - first exercise was Bench Press at 70 lb (est 1RM 99 lb)",
       "active": "EXISTS"
     },
     {
@@ -574,7 +574,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "43a866c Refresh podcast digest data",
+      "last_commit": "f379877 Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
