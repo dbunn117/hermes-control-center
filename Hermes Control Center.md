@@ -1,12 +1,12 @@
 # Hermes Control Center
 
-**Last generated:** 2026-08-26T14:00:46
+**Last generated:** 2026-08-27T14:00:59
 **Location:** `file:///root/hermes-control-center/index.html`
 
 ## Overview
 
 - **Active profiles:** 3/4
-- **Total cron jobs:** 18 (16 active, 2 paused)
+- **Total cron jobs:** 19 (17 active, 2 paused)
 - **Dashboards:** 4
 - **Connected gateways:** 3
 
@@ -14,7 +14,7 @@
 
 - **Heath** (`heath`): Family / co-pilot — deepseek/deepseek-v4-flash via  — 3 active jobs
 - **Paula** (`paula`): Family / co-pilot — deepseek/deepseek-v4-flash via  — 2 active jobs
-- **Scout** (`personal`): Personal OS / orchestrator — deepseek/deepseek-v4-flash via  — 11 active jobs
+- **Scout** (`personal`): Personal OS / orchestrator — deepseek/deepseek-v4-flash via  — 12 active jobs
 - **Trader** (`trader`): Trading / quant — deepseek/deepseek-v4-flash via openrouter — 0 active jobs
 
 ## Dashboards

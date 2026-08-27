@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T14:00:46Z",
+  "generated_at": "2026-08-27T14:00:59Z",
   "profiles": [
     {
       "display": "Heath",
@@ -32,7 +32,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-26T06:58:25.222329+00:00",
+        "updated_at": "2026-08-27T00:10:52.730656+00:00",
         "active_agents": 0,
         "pid": 1137241,
         "platforms": {
@@ -57,8 +57,8 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-08-26T08:00:00-07:00",
-          "last_run_at": "2026-08-25T08:04:37.996596-07:00",
+          "next_run_at": "2026-08-27T08:00:00-07:00",
+          "last_run_at": "2026-08-26T08:03:19.342890-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
@@ -77,8 +77,8 @@
             "expr": "5 8 * * *",
             "display": "5 8 * * *"
           },
-          "next_run_at": "2026-08-26T08:05:00-07:00",
-          "last_run_at": "2026-08-25T08:07:36.609571-07:00",
+          "next_run_at": "2026-08-27T08:05:00-07:00",
+          "last_run_at": "2026-08-26T08:07:14.935253-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -161,26 +161,6 @@
       "jobs": [
         {
           "id": "",
-          "name": "Toddler Twin Evening Activity & Toy List",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 18 * * 1,2,3",
-            "display": "0 18 * * 1,2,3"
-          },
-          "next_run_at": "2026-08-26T18:00:00-07:00",
-          "last_run_at": "2026-08-25T18:06:27.715530-07:00",
-          "last_status": "ok",
-          "deliver": "origin",
-          "skills": [],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": "deepseek/deepseek-v4-flash",
-          "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
           "name": "Paula's Local Weekend Activities & Weather Briefing",
           "active": true,
           "state": "scheduled",
@@ -191,6 +171,26 @@
           },
           "next_run_at": "2026-08-27T20:00:00-07:00",
           "last_run_at": "2026-08-20T23:01:20.250598-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Toddler Twin Evening Activity & Toy List",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 18 * * 1,2,3",
+            "display": "0 18 * * 1,2,3"
+          },
+          "next_run_at": "2026-08-31T18:00:00-07:00",
+          "last_run_at": "2026-08-26T18:03:14.186482-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -232,7 +232,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-26T06:17:06.693061+00:00",
+        "updated_at": "2026-08-26T21:25:43.553996+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -255,8 +255,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-08-26T07:23:35.657606-07:00",
-          "last_run_at": "2026-08-26T06:53:35.657606-07:00",
+          "next_run_at": "2026-08-27T07:13:53.081773-07:00",
+          "last_run_at": "2026-08-27T06:43:53.081773-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -278,8 +278,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-08-26T07:30:00-07:00",
-          "last_run_at": "2026-08-25T07:42:37.092474-07:00",
+          "next_run_at": "2026-08-27T07:30:00-07:00",
+          "last_run_at": "2026-08-26T07:39:13.386742-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -300,8 +300,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-08-26T08:15:00-07:00",
-          "last_run_at": "2026-08-25T08:15:34.976461-07:00",
+          "next_run_at": "2026-08-27T08:15:00-07:00",
+          "last_run_at": "2026-08-26T08:15:48.202602-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -320,8 +320,8 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-08-26T09:00:00-07:00",
-          "last_run_at": "2026-08-25T09:01:32.128057-07:00",
+          "next_run_at": "2026-08-27T09:00:00-07:00",
+          "last_run_at": "2026-08-26T09:02:07.055043-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -340,8 +340,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-08-26T16:00:00-07:00",
-          "last_run_at": "2026-08-25T16:01:06.498287-07:00",
+          "next_run_at": "2026-08-27T16:00:00-07:00",
+          "last_run_at": "2026-08-26T16:01:43.326433-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -363,8 +363,8 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-08-26T22:00:00-07:00",
-          "last_run_at": "2026-08-25T22:01:03.666365-07:00",
+          "next_run_at": "2026-08-27T22:00:00-07:00",
+          "last_run_at": "2026-08-26T22:01:09.688455-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -383,8 +383,8 @@
             "expr": "0 6 * * *",
             "display": "0 6 * * *"
           },
-          "next_run_at": "2026-08-27T06:00:00-07:00",
-          "last_run_at": "2026-08-26T06:05:40.442520-07:00",
+          "next_run_at": "2026-08-28T06:00:00-07:00",
+          "last_run_at": "2026-08-27T06:07:52.961173-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -406,8 +406,8 @@
             "expr": "0 7 * * *",
             "display": "0 7 * * *"
           },
-          "next_run_at": "2026-08-27T07:00:00-07:00",
-          "last_run_at": "2026-08-25T07:00:35.022509-07:00",
+          "next_run_at": "2026-08-28T07:00:00-07:00",
+          "last_run_at": "2026-08-26T07:00:48.228314-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [],
@@ -459,6 +459,26 @@
           "no_agent": false,
           "model_snapshot": "deepseek/deepseek-v4-flash",
           "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Cancel LinkedIn Premium trial",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "once",
+            "run_at": "2026-09-23T09:00:00-07:00",
+            "display": "once at 2026-09-23 09:00"
+          },
+          "next_run_at": "2026-09-23T09:00:00-07:00",
+          "last_run_at": null,
+          "last_status": null,
+          "deliver": "origin",
+          "skills": [],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": null,
+          "provider_snapshot": null
         },
         {
           "id": "",
@@ -566,7 +586,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "fdfedfe Fix Aug 25 - first exercise was Bench Press at 70 lb (est 1RM 99 lb)",
+      "last_commit": "5dbe16d Add Aug 26 workout - Lower body (16K lb, RDL 205 lb est 1RM, Bulgarian Split Squat 100 lb)",
       "active": "EXISTS"
     },
     {
@@ -574,7 +594,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "f379877 Refresh podcast digest data",
+      "last_commit": "33e06a7 Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
