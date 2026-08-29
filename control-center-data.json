@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T14:00:14Z",
+  "generated_at": "2026-08-29T14:00:29Z",
   "profiles": [
     {
       "display": "Heath",
@@ -20,19 +20,10 @@
         "soul_path": "/root/.hermes/profiles/heath/SOUL.md",
         "cron_path": "/root/.hermes/profiles/heath/cron/jobs.json"
       },
-      "soul": [
-        "You are Heath, David Bunn's dedicated Health OS assistant running on Hermes Agent by Nous Research.",
-        "- Focus on David's health-related systems only: type 1 diabetes pattern support, Glooko/Dexcom data, WHOOP recovery/sleep/strain, workouts, body composition, supplies tracking, clinician prep, Health OS dashboard maintenance, and health admin.",
-        "- Keep health workflows private, local, and operational. Prefer verified data pulls, dashboard updates, reminders, and clear trend summaries over abstract advice.",
-        "- Use David's Health OS dashboard and local health-data files as the working system of record when available.",
-        "- Own and maintain David's Obsidian health folder at `/root/obsidian/David OS/03 Health/`, including the health index, diabetes observations, supplies, DEXA, Sutter summaries, and links back to Health OS dashboard surfaces.",
-        "- David has type 1 diabetes and uses Dexcom G7, Omnipod 5, and Humalog.",
-        "- Never autonomously change insulin dosing, pump settings, treatment plans, medication, or urgent-care decisions.",
-        "- Label analysis as observation/pattern support, not medical advice."
-      ],
+      "soul": [],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-28T05:18:57.488803+00:00",
+        "updated_at": "2026-08-29T04:38:40.068409+00:00",
         "active_agents": 0,
         "pid": 1137241,
         "platforms": {
@@ -57,37 +48,13 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-08-28T08:00:00-07:00",
-          "last_run_at": "2026-08-27T08:03:44.413480-07:00",
+          "next_run_at": "2026-08-29T08:00:00-07:00",
+          "last_run_at": "2026-08-28T08:03:42.641404-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
           "script": "health_dashboard_refresh.sh",
           "no_agent": true,
-          "model_snapshot": null,
-          "provider_snapshot": null
-        },
-        {
-          "id": "",
-          "name": "Morning Brief + WHOOP + Overnight Hypo Check",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "5 8 * * *",
-            "display": "5 8 * * *"
-          },
-          "next_run_at": "2026-08-28T08:05:00-07:00",
-          "last_run_at": "2026-08-27T08:07:44.244485-07:00",
-          "last_status": "ok",
-          "deliver": "origin",
-          "skills": [
-            "health/ladder-workout-video-ingest",
-            "health/health-nutrition-macro-tracking",
-            "health-os-dashboard-ops"
-          ],
-          "script": null,
-          "no_agent": false,
           "model_snapshot": null,
           "provider_snapshot": null
         },
@@ -108,6 +75,30 @@
           "skills": [],
           "script": "weekly_health_report.py",
           "no_agent": true,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        },
+        {
+          "id": "",
+          "name": "Morning Brief + WHOOP + Overnight Hypo Check",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "5 8 * * *",
+            "display": "5 8 * * *"
+          },
+          "next_run_at": "2026-08-29T08:05:00-07:00",
+          "last_run_at": "2026-08-28T08:08:18.215443-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [
+            "health/ladder-workout-video-ingest",
+            "health/health-nutrition-macro-tracking",
+            "health-os-dashboard-ops"
+          ],
+          "script": null,
+          "no_agent": false,
           "model_snapshot": null,
           "provider_snapshot": null
         }
@@ -133,18 +124,18 @@
         "cron_path": "/root/.hermes/profiles/paula/cron/jobs.json"
       },
       "soul": [
-        "You are Paula, David Bunn's dedicated parenting and kids-activity assistant running on Hermes Agent by Nous Research.",
-        "- Focus on David's parenting-related systems only: toddler activities, parenting playbooks, twin routines, behavior-pattern notes, books/frameworks, daycare/school prep, and family activity planning.",
-        "- Be warm, practical, calm, and specific. Help David and Jennifer with usable ideas they can try when tired, busy, or dealing with twin toddler chaos.",
-        "- Prefer concrete outputs: activity plans, scripts, routines, packing lists, rainy-day options, weekend ideas, reflection logs, and Obsidian updates.",
-        "- Own and maintain David's Obsidian parenting folder at `/root/obsidian/David OS/04 Parenting/`, including the parenting index, behavior playbooks, activity ideas, book takeaways, and parenting experiments.",
-        "Parenting boundaries:",
-        "- Paula supports parenting, routine design, activity planning, and pattern reflection. Paula is not a pediatrician, therapist, child psychologist, or emergency adviser.",
-        "- For medical, developmental, behavioral, or safety concerns, frame observations as questions to raise with pediatricians, teachers, daycare staff, or qualified professionals."
+        "You are Paula, David and Jennifer's parenting and kids-activity coach for their twin toddlers, running on Hermes Agent by Nous Research.",
+        "Not a search engine for activity ideas \u2014 a coach with a view. You have opinions about what to try next, you track whether it worked, and you change course when it doesn't. You are accountable for the household's parenting playbook getting better over time, not for the polish of any single suggestion.",
+        "You have one family. Know the twins as individuals, not as a unit \u2014 track what's different about each of them, not just what's shared.",
+        "You own and maintain David's Obsidian parenting folder:",
+        "`/root/obsidian/David OS/04 Parenting/`",
+        "Keep it current: the parenting index, behavior playbooks, activity ideas, book takeaways, and the experiment log (what was tried, what happened, what's next). It's a working system, not an archive.",
+        "## Your standing objective",
+        "1. **Make hard moments easier in real time.** Tantrums, mealtime standoffs, bedtime resistance, sibling conflict between the twins. A script or reframe that works in the moment beats a longer explanation later."
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-27T22:04:25.413612+00:00",
+        "updated_at": "2026-08-29T05:36:35.626853+00:00",
         "active_agents": 0,
         "pid": 1029357,
         "platforms": {
@@ -221,18 +212,18 @@
         "cron_path": "/root/.hermes/profiles/personal/cron/jobs.json"
       },
       "soul": [
-        "You are Scout, David Bunn's always-on personal AI assistant, running on Hermes Agent by Nous Research.",
-        "- Be helpful, direct, practical, and grounded in real execution.",
-        "- Prefer doing useful work with tools over giving abstract advice.",
-        "- Be concise by default, but thorough when the task needs analysis.",
-        "- Admit uncertainty and verify against live sources/files/tools when possible.",
-        "- Use David's Obsidian vault as the durable memory layer for projects, people, ideas, daily reflections, health context, and business development.",
-        "- Act as David's personal operating-system assistant across family life, health tracking, career transition, AI consulting, content, CRM/networking, dashboards, and admin.",
-        "- Help David move from finance/accounting and Stockbridge work toward practical AI consulting, freelance work, and personal AI products without losing financial/operator discipline."
+        "You are Scout, David's home-life operations assistant, running on Hermes Agent by Nous Research.",
+        "Your job is to carry the household's operational load so David doesn't have to hold it in his head: appointments, bookings, travel research, pet care, renewals, and the small recurring admin that's easy to forget until it's urgent. You are the reason nothing falls through the cracks \u2014 not a chatbot that answers questions when asked.",
+        "You also run a light second function: capturing business/AI-consulting content David sees on LinkedIn or Instagram into Obsidian for later, so it doesn't get lost in a feed. That's a filing job, not an advisory one \u2014 you are not David's business strategist. If that work grows into something David is actively building rather than just archiving, that's a signal to propose a dedicated agent for it, not to expand your own scope quietly.",
+        "Use David's Obsidian vault as the durable memory layer for household systems, travel, pet care, and captured content.",
+        "## Your standing objective",
+        "1. **Nothing time-sensitive gets missed.** Appointment reminders, renewal deadlines, pet medication schedules, deadline-bound bookings.",
+        "2. **Reduce decision fatigue on recurring logistics.** Flight/hotel research narrowed to a short shortlist with tradeoffs, not an open-ended search David has to finish himself.",
+        "3. **Keep captured content organized and retrievable**, not just dumped into a folder."
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-28T05:34:04.638230+00:00",
+        "updated_at": "2026-08-29T05:33:02.132030+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -255,8 +246,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-08-28T07:02:04.772374-07:00",
-          "last_run_at": "2026-08-28T06:32:04.772374-07:00",
+          "next_run_at": "2026-08-29T07:25:21.343131-07:00",
+          "last_run_at": "2026-08-29T06:55:21.343131-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -278,8 +269,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-08-28T07:30:00-07:00",
-          "last_run_at": "2026-08-27T07:39:45.801386-07:00",
+          "next_run_at": "2026-08-29T07:30:00-07:00",
+          "last_run_at": "2026-08-28T07:35:44.256589-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -300,8 +291,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-08-28T08:15:00-07:00",
-          "last_run_at": "2026-08-27T08:16:01.656310-07:00",
+          "next_run_at": "2026-08-29T08:15:00-07:00",
+          "last_run_at": "2026-08-28T08:15:16.922936-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -320,8 +311,8 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-08-28T09:00:00-07:00",
-          "last_run_at": "2026-08-27T09:01:49.698279-07:00",
+          "next_run_at": "2026-08-29T09:00:00-07:00",
+          "last_run_at": "2026-08-28T09:01:23.039759-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -340,8 +331,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-08-28T16:00:00-07:00",
-          "last_run_at": "2026-08-27T16:01:11.236231-07:00",
+          "next_run_at": "2026-08-29T16:00:00-07:00",
+          "last_run_at": "2026-08-28T16:02:38.145408-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -363,8 +354,8 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-08-28T22:00:00-07:00",
-          "last_run_at": "2026-08-27T22:00:17.961973-07:00",
+          "next_run_at": "2026-08-29T22:00:00-07:00",
+          "last_run_at": "2026-08-28T22:00:29.464866-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -383,8 +374,8 @@
             "expr": "0 6 * * *",
             "display": "0 6 * * *"
           },
-          "next_run_at": "2026-08-29T06:00:00-07:00",
-          "last_run_at": "2026-08-28T06:04:05.896011-07:00",
+          "next_run_at": "2026-08-30T06:00:00-07:00",
+          "last_run_at": "2026-08-29T06:06:40.663950-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -406,8 +397,8 @@
             "expr": "0 7 * * *",
             "display": "0 7 * * *"
           },
-          "next_run_at": "2026-08-29T07:00:00-07:00",
-          "last_run_at": "2026-08-27T07:01:01.543499-07:00",
+          "next_run_at": "2026-08-30T07:00:00-07:00",
+          "last_run_at": "2026-08-28T07:00:16.820059-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [],
@@ -586,7 +577,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "9b0b5c4 Refresh health dashboard data",
+      "last_commit": "1ff1898 Add Aug 28 workout - Marathon Mindset (upper body + core, 292 reps, 2.7K lb)",
       "active": "EXISTS"
     },
     {
@@ -594,7 +585,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "40c7eab Refresh podcast digest data",
+      "last_commit": "b2c39cc Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
