@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T14:00:29Z",
+  "generated_at": "2026-08-30T14:00:44Z",
   "profiles": [
     {
       "display": "Heath",
@@ -23,7 +23,7 @@
       "soul": [],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-29T04:38:40.068409+00:00",
+        "updated_at": "2026-08-29T20:57:25.827724+00:00",
         "active_agents": 0,
         "pid": 1137241,
         "platforms": {
@@ -48,32 +48,12 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-08-29T08:00:00-07:00",
-          "last_run_at": "2026-08-28T08:03:42.641404-07:00",
+          "next_run_at": "2026-08-30T08:00:00-07:00",
+          "last_run_at": "2026-08-29T08:03:13.148074-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
           "script": "health_dashboard_refresh.sh",
-          "no_agent": true,
-          "model_snapshot": null,
-          "provider_snapshot": null
-        },
-        {
-          "id": "",
-          "name": "Weekly Health OS report",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 8 * * 6",
-            "display": "0 8 * * 6"
-          },
-          "next_run_at": "2026-08-29T08:00:00-07:00",
-          "last_run_at": "2026-08-22T08:00:36.694626-07:00",
-          "last_status": "ok",
-          "deliver": "telegram",
-          "skills": [],
-          "script": "weekly_health_report.py",
           "no_agent": true,
           "model_snapshot": null,
           "provider_snapshot": null
@@ -88,8 +68,8 @@
             "expr": "5 8 * * *",
             "display": "5 8 * * *"
           },
-          "next_run_at": "2026-08-29T08:05:00-07:00",
-          "last_run_at": "2026-08-28T08:08:18.215443-07:00",
+          "next_run_at": "2026-08-30T08:05:00-07:00",
+          "last_run_at": "2026-08-29T08:07:45.038606-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -99,6 +79,26 @@
           ],
           "script": null,
           "no_agent": false,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        },
+        {
+          "id": "",
+          "name": "Weekly Health OS report",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 8 * * 6",
+            "display": "0 8 * * 6"
+          },
+          "next_run_at": "2026-09-05T08:00:00-07:00",
+          "last_run_at": "2026-08-29T08:00:07.142314-07:00",
+          "last_status": "ok",
+          "deliver": "telegram",
+          "skills": [],
+          "script": "weekly_health_report.py",
+          "no_agent": true,
           "model_snapshot": null,
           "provider_snapshot": null
         }
@@ -223,7 +223,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-29T05:33:02.132030+00:00",
+        "updated_at": "2026-08-29T23:41:26.764751+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -246,8 +246,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-08-29T07:25:21.343131-07:00",
-          "last_run_at": "2026-08-29T06:55:21.343131-07:00",
+          "next_run_at": "2026-08-30T07:16:22.812878-07:00",
+          "last_run_at": "2026-08-30T06:46:22.812878-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -269,8 +269,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-08-29T07:30:00-07:00",
-          "last_run_at": "2026-08-28T07:35:44.256589-07:00",
+          "next_run_at": "2026-08-30T07:30:00-07:00",
+          "last_run_at": "2026-08-29T07:42:32.412177-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -291,8 +291,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-08-29T08:15:00-07:00",
-          "last_run_at": "2026-08-28T08:15:16.922936-07:00",
+          "next_run_at": "2026-08-30T08:15:00-07:00",
+          "last_run_at": "2026-08-29T08:15:32.436688-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -311,8 +311,8 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-08-29T09:00:00-07:00",
-          "last_run_at": "2026-08-28T09:01:23.039759-07:00",
+          "next_run_at": "2026-08-30T09:00:00-07:00",
+          "last_run_at": "2026-08-29T09:02:29.638019-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -331,8 +331,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-08-29T16:00:00-07:00",
-          "last_run_at": "2026-08-28T16:02:38.145408-07:00",
+          "next_run_at": "2026-08-30T16:00:00-07:00",
+          "last_run_at": "2026-08-29T16:02:11.605676-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -354,8 +354,8 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-08-29T22:00:00-07:00",
-          "last_run_at": "2026-08-28T22:00:29.464866-07:00",
+          "next_run_at": "2026-08-30T22:00:00-07:00",
+          "last_run_at": "2026-08-29T22:00:52.506903-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -374,8 +374,8 @@
             "expr": "0 6 * * *",
             "display": "0 6 * * *"
           },
-          "next_run_at": "2026-08-30T06:00:00-07:00",
-          "last_run_at": "2026-08-29T06:06:40.663950-07:00",
+          "next_run_at": "2026-08-31T06:00:00-07:00",
+          "last_run_at": "2026-08-30T06:06:19.476044-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -397,8 +397,8 @@
             "expr": "0 7 * * *",
             "display": "0 7 * * *"
           },
-          "next_run_at": "2026-08-30T07:00:00-07:00",
-          "last_run_at": "2026-08-28T07:00:16.820059-07:00",
+          "next_run_at": "2026-08-31T07:00:00-07:00",
+          "last_run_at": "2026-08-29T07:00:32.050124-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [],
@@ -577,7 +577,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "1ff1898 Add Aug 28 workout - Marathon Mindset (upper body + core, 292 reps, 2.7K lb)",
+      "last_commit": "1b87006 Refresh health dashboard data",
       "active": "EXISTS"
     },
     {
@@ -585,7 +585,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "b2c39cc Refresh podcast digest data",
+      "last_commit": "5bf3b65 Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
