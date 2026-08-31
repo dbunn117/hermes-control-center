@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T14:00:44Z",
+  "generated_at": "2026-08-31T14:00:58Z",
   "profiles": [
     {
       "display": "Heath",
@@ -23,7 +23,7 @@
       "soul": [],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-08-29T20:57:25.827724+00:00",
+        "updated_at": "2026-08-30T19:54:27.552927+00:00",
         "active_agents": 0,
         "pid": 1137241,
         "platforms": {
@@ -48,8 +48,8 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-08-30T08:00:00-07:00",
-          "last_run_at": "2026-08-29T08:03:13.148074-07:00",
+          "next_run_at": "2026-08-31T08:00:00-07:00",
+          "last_run_at": "2026-08-30T08:03:37.144515-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
@@ -68,8 +68,8 @@
             "expr": "5 8 * * *",
             "display": "5 8 * * *"
           },
-          "next_run_at": "2026-08-30T08:05:00-07:00",
-          "last_run_at": "2026-08-29T08:07:45.038606-07:00",
+          "next_run_at": "2026-08-31T08:05:00-07:00",
+          "last_run_at": "2026-08-30T08:07:13.810570-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -246,8 +246,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-08-30T07:16:22.812878-07:00",
-          "last_run_at": "2026-08-30T06:46:22.812878-07:00",
+          "next_run_at": "2026-08-31T07:03:23.698780-07:00",
+          "last_run_at": "2026-08-31T06:33:23.698780-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -269,8 +269,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-08-30T07:30:00-07:00",
-          "last_run_at": "2026-08-29T07:42:32.412177-07:00",
+          "next_run_at": "2026-08-31T07:30:00-07:00",
+          "last_run_at": "2026-08-30T07:33:47.840241-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -291,8 +291,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-08-30T08:15:00-07:00",
-          "last_run_at": "2026-08-29T08:15:32.436688-07:00",
+          "next_run_at": "2026-08-31T08:15:00-07:00",
+          "last_run_at": "2026-08-30T08:15:46.753709-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -311,8 +311,8 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-08-30T09:00:00-07:00",
-          "last_run_at": "2026-08-29T09:02:29.638019-07:00",
+          "next_run_at": "2026-08-31T09:00:00-07:00",
+          "last_run_at": "2026-08-30T09:01:52.653910-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -331,8 +331,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-08-30T16:00:00-07:00",
-          "last_run_at": "2026-08-29T16:02:11.605676-07:00",
+          "next_run_at": "2026-08-31T16:00:00-07:00",
+          "last_run_at": "2026-08-30T16:02:12.562033-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -354,8 +354,8 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-08-30T22:00:00-07:00",
-          "last_run_at": "2026-08-29T22:00:52.506903-07:00",
+          "next_run_at": "2026-08-31T22:00:00-07:00",
+          "last_run_at": "2026-08-30T22:01:45.438252-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -363,49 +363,6 @@
           "no_agent": false,
           "model_snapshot": "deepseek/deepseek-v4-flash",
           "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
-          "name": "Daily sports briefing email",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 6 * * *",
-            "display": "0 6 * * *"
-          },
-          "next_run_at": "2026-08-31T06:00:00-07:00",
-          "last_run_at": "2026-08-30T06:06:19.476044-07:00",
-          "last_status": "ok",
-          "deliver": "local",
-          "skills": [
-            "agentmail",
-            "personalized-briefings"
-          ],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": "deepseek/deepseek-v4-flash",
-          "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
-          "name": "Daily Hermes Control Center refresh",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 7 * * *",
-            "display": "0 7 * * *"
-          },
-          "next_run_at": "2026-08-31T07:00:00-07:00",
-          "last_run_at": "2026-08-29T07:00:32.050124-07:00",
-          "last_status": "ok",
-          "deliver": "local",
-          "skills": [],
-          "script": "refresh_control_center.py",
-          "no_agent": true,
-          "model_snapshot": null,
-          "provider_snapshot": null
         },
         {
           "id": "",
@@ -428,6 +385,49 @@
           "no_agent": false,
           "model_snapshot": "deepseek/deepseek-v4-flash",
           "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Daily sports briefing email",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 6 * * *",
+            "display": "0 6 * * *"
+          },
+          "next_run_at": "2026-09-01T06:00:00-07:00",
+          "last_run_at": "2026-08-31T06:06:05.465883-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [
+            "agentmail",
+            "personalized-briefings"
+          ],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Daily Hermes Control Center refresh",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 7 * * *",
+            "display": "0 7 * * *"
+          },
+          "next_run_at": "2026-09-01T07:00:00-07:00",
+          "last_run_at": "2026-08-30T07:00:46.543662-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [],
+          "script": "refresh_control_center.py",
+          "no_agent": true,
+          "model_snapshot": null,
+          "provider_snapshot": null
         },
         {
           "id": "",
@@ -577,7 +577,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "1b87006 Refresh health dashboard data",
+      "last_commit": "787e8b1 Add Aug 29 weekend session - Upper Push (5.6K lb, 178 reps)",
       "active": "EXISTS"
     },
     {
@@ -585,7 +585,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "5bf3b65 Refresh podcast digest data",
+      "last_commit": "d16591b Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
