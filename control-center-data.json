@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T14:00:13Z",
+  "generated_at": "2026-09-02T14:00:27Z",
   "profiles": [
     {
       "display": "Heath",
@@ -23,7 +23,7 @@
       "soul": [],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-01T05:48:58.765193+00:00",
+        "updated_at": "2026-09-02T06:45:54.401719+00:00",
         "active_agents": 0,
         "pid": 1137241,
         "platforms": {
@@ -48,8 +48,8 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-09-01T08:00:00-07:00",
-          "last_run_at": "2026-08-31T08:03:10.974764-07:00",
+          "next_run_at": "2026-09-02T08:00:00-07:00",
+          "last_run_at": "2026-09-01T08:03:03.830131-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
@@ -68,8 +68,8 @@
             "expr": "5 8 * * *",
             "display": "5 8 * * *"
           },
-          "next_run_at": "2026-09-01T08:05:00-07:00",
-          "last_run_at": "2026-08-31T08:07:39.992708-07:00",
+          "next_run_at": "2026-09-02T08:05:00-07:00",
+          "last_run_at": "2026-09-01T08:08:00.229857-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -160,8 +160,8 @@
             "expr": "0 18 * * 1,2,3",
             "display": "0 18 * * 1,2,3"
           },
-          "next_run_at": "2026-09-01T18:00:00-07:00",
-          "last_run_at": "2026-08-31T18:04:41.576632-07:00",
+          "next_run_at": "2026-09-02T18:00:00-07:00",
+          "last_run_at": "2026-09-01T18:12:17.337008-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -223,7 +223,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-01T05:50:25.183675+00:00",
+        "updated_at": "2026-09-02T06:20:10.990322+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -238,28 +238,6 @@
       "jobs": [
         {
           "id": "",
-          "name": "Daily podcast digest email",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "30 7 * * *",
-            "display": "30 7 * * *"
-          },
-          "next_run_at": "2026-09-01T07:30:00-07:00",
-          "last_run_at": "2026-08-31T07:41:58.976474-07:00",
-          "last_status": "ok",
-          "deliver": "local",
-          "skills": [
-            "agentmail"
-          ],
-          "script": "podcast_digest_collect.py",
-          "no_agent": false,
-          "model_snapshot": "deepseek/deepseek-v4-flash",
-          "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
           "name": "Scout AgentMail action queue",
           "active": true,
           "state": "scheduled",
@@ -268,8 +246,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-09-01T07:30:13.684974-07:00",
-          "last_run_at": "2026-09-01T06:29:58.745872-07:00",
+          "next_run_at": "2026-09-02T07:01:28.553722-07:00",
+          "last_run_at": "2026-09-02T06:31:28.553722-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -277,6 +255,28 @@
             "google-workspace"
           ],
           "script": null,
+          "no_agent": false,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Daily podcast digest email",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "30 7 * * *",
+            "display": "30 7 * * *"
+          },
+          "next_run_at": "2026-09-02T07:30:00-07:00",
+          "last_run_at": "2026-09-01T07:40:46.595499-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [
+            "agentmail"
+          ],
+          "script": "podcast_digest_collect.py",
           "no_agent": false,
           "model_snapshot": "deepseek/deepseek-v4-flash",
           "provider_snapshot": "openrouter"
@@ -291,8 +291,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-09-01T08:15:00-07:00",
-          "last_run_at": "2026-08-31T08:16:00.803916-07:00",
+          "next_run_at": "2026-09-02T08:15:00-07:00",
+          "last_run_at": "2026-09-01T08:15:16.472766-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -311,8 +311,8 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-09-01T09:00:00-07:00",
-          "last_run_at": "2026-08-31T09:03:57.240796-07:00",
+          "next_run_at": "2026-09-02T09:00:00-07:00",
+          "last_run_at": "2026-09-01T09:06:35.916878-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -331,8 +331,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-09-01T16:00:00-07:00",
-          "last_run_at": "2026-08-31T16:02:59.557747-07:00",
+          "next_run_at": "2026-09-02T16:00:00-07:00",
+          "last_run_at": "2026-09-01T16:01:30.851377-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -354,11 +354,13 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-09-01T22:00:00-07:00",
-          "last_run_at": "2026-08-31T22:00:27.323523-07:00",
+          "next_run_at": "2026-09-02T22:00:00-07:00",
+          "last_run_at": "2026-09-01T22:00:39.196407-07:00",
           "last_status": "ok",
           "deliver": "origin",
-          "skills": [],
+          "skills": [
+            "obsidian-reflection-workflows"
+          ],
           "script": null,
           "no_agent": false,
           "model_snapshot": "deepseek/deepseek-v4-flash",
@@ -374,8 +376,8 @@
             "expr": "0 6 * * *",
             "display": "0 6 * * *"
           },
-          "next_run_at": "2026-09-02T06:00:00-07:00",
-          "last_run_at": "2026-09-01T06:06:53.758094-07:00",
+          "next_run_at": "2026-09-03T06:00:00-07:00",
+          "last_run_at": "2026-09-02T06:08:01.678040-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -397,8 +399,8 @@
             "expr": "0 7 * * *",
             "display": "0 7 * * *"
           },
-          "next_run_at": "2026-09-02T07:00:00-07:00",
-          "last_run_at": "2026-08-31T07:01:00.082609-07:00",
+          "next_run_at": "2026-09-03T07:00:00-07:00",
+          "last_run_at": "2026-09-01T07:00:17.627951-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [],
@@ -577,7 +579,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "39e6f63 Add Historical Injuries to dashboard + Obsidian",
+      "last_commit": "e8382ea Restore Aug 31 workout + add Sep 1 rest day",
       "active": "EXISTS"
     },
     {
@@ -585,7 +587,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "ecbb67d Refresh podcast digest data",
+      "last_commit": "0081c46 Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
