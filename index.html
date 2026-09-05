@@ -63,7 +63,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 <div class="container">
     <div class="sidebar">
         <h1>Hermes Control Center</h1>
-        <p class="version">Generated 2026-09-04T14:00</p>
+        <p class="version">Generated 2026-09-05T14:00</p>
         <div class="kpi-summary">
             <div class="kpi-item"><span>Profiles</span><span class="val">4</span></div>
             <div class="kpi-item"><span>Cron Jobs</span><span class="val">19</span></div>
@@ -84,7 +84,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
     <div class="main">
         <div class="header">
             <h1>Operator Dashboard</h1>
-            <span class="stale">Last updated: 2026-09-04T14:00:54</span>
+            <span class="stale">Last updated: 2026-09-05T14:00:08</span>
         </div>
         <div class="profile-card">
             <div class="profile-header" style="border-left: 4px solid #6366f1;">
@@ -114,17 +114,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
                 <tbody><tr>
                 <td><span class="state-active">▶</span> Daily Health OS dashboard refresh</td>
                 <td><code>{'kind': 'cron', 'expr': '0 8 * * *', 'display': '0 8 * * *'}</code></td>
-                <td>2026-09-04T08:00</td>
+                <td>2026-09-05T08:00</td>
                 <td><span class="badge badge-green">ok</span></td>
                 <td><code>script</code></td>
                 <td>telegram</td>
-            </tr><tr>
-                <td><span class="state-active">▶</span> Morning Brief + WHOOP + Overnight Hypo Check</td>
-                <td><code>{'kind': 'cron', 'expr': '5 8 * * *', 'display': '5 8 * * *'}</code></td>
-                <td>2026-09-04T08:05</td>
-                <td><span class="badge badge-green">ok</span></td>
-                <td><code>script</code></td>
-                <td>origin</td>
             </tr><tr>
                 <td><span class="state-active">▶</span> Weekly Health OS report</td>
                 <td><code>{'kind': 'cron', 'expr': '0 8 * * 6', 'display': '0 8 * * 6'}</code></td>
@@ -132,6 +125,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
                 <td><span class="badge badge-green">ok</span></td>
                 <td><code>script</code></td>
                 <td>telegram</td>
+            </tr><tr>
+                <td><span class="state-active">▶</span> Morning Brief + WHOOP + Overnight Hypo Check</td>
+                <td><code>{'kind': 'cron', 'expr': '5 8 * * *', 'display': '5 8 * * *'}</code></td>
+                <td>2026-09-05T08:05</td>
+                <td><span class="badge badge-green">ok</span></td>
+                <td><code>script</code></td>
+                <td>origin</td>
             </tr></tbody>
             </table>
         </div><div class="profile-card">
@@ -203,56 +203,56 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
                 <tbody><tr>
                 <td><span class="state-active">▶</span> Scout AgentMail action queue</td>
                 <td><code>{'kind': 'interval', 'minutes': 30, 'display': 'every 30m'}</code></td>
-                <td>2026-09-04T07:21</td>
+                <td>2026-09-05T07:13</td>
                 <td><span class="badge badge-green">ok</span></td>
                 <td><code>deepseek/deepseek-v4-flash</code></td>
                 <td>local</td>
             </tr><tr>
                 <td><span class="state-active">▶</span> Daily podcast digest email</td>
                 <td><code>{'kind': 'cron', 'expr': '30 7 * * *', 'display': '30 7 * * *'}</code></td>
-                <td>2026-09-04T07:30</td>
+                <td>2026-09-05T07:30</td>
                 <td><span class="badge badge-green">ok</span></td>
                 <td><code>deepseek/deepseek-v4-flash</code></td>
                 <td>local</td>
             </tr><tr>
                 <td><span class="state-active">▶</span> Daily Obsidian lifecycle sweep</td>
                 <td><code>{'kind': 'cron', 'expr': '15 8 * * *', 'display': '15 8 * * *'}</code></td>
-                <td>2026-09-04T08:15</td>
+                <td>2026-09-05T08:15</td>
                 <td><span class="badge badge-green">ok</span></td>
                 <td><code>script</code></td>
                 <td>origin</td>
             </tr><tr>
                 <td><span class="state-active">▶</span> Foster City rental watch - 4bd 2000+ sqft</td>
                 <td><code>{'kind': 'cron', 'expr': '0 9 * * *', 'display': '0 9 * * *'}</code></td>
-                <td>2026-09-04T09:00</td>
+                <td>2026-09-05T09:00</td>
                 <td><span class="badge badge-green">ok</span></td>
                 <td><code>script</code></td>
                 <td>origin</td>
             </tr><tr>
                 <td><span class="state-active">▶</span> Daily email triage - Scout Gmail and AgentMail</td>
                 <td><code>{'kind': 'cron', 'expr': '0 16 * * *', 'display': '0 16 * * *'}</code></td>
-                <td>2026-09-04T16:00</td>
+                <td>2026-09-05T16:00</td>
                 <td><span class="badge badge-green">ok</span></td>
                 <td><code>deepseek/deepseek-v4-flash</code></td>
                 <td>origin</td>
             </tr><tr>
                 <td><span class="state-active">▶</span> Daily Obsidian reflection prompt</td>
                 <td><code>{'kind': 'cron', 'expr': '0 22 * * *', 'display': '0 22 * * *'}</code></td>
-                <td>2026-09-04T22:00</td>
+                <td>2026-09-05T22:00</td>
                 <td><span class="badge badge-green">ok</span></td>
                 <td><code>deepseek/deepseek-v4-flash</code></td>
                 <td>origin</td>
             </tr><tr>
                 <td><span class="state-active">▶</span> Daily sports briefing email</td>
                 <td><code>{'kind': 'cron', 'expr': '0 6 * * *', 'display': '0 6 * * *'}</code></td>
-                <td>2026-09-05T06:00</td>
+                <td>2026-09-06T06:00</td>
                 <td><span class="badge badge-green">ok</span></td>
                 <td><code>deepseek/deepseek-v4-flash</code></td>
                 <td>local</td>
             </tr><tr>
                 <td><span class="state-active">▶</span> Daily Hermes Control Center refresh</td>
                 <td><code>{'kind': 'cron', 'expr': '0 7 * * *', 'display': '0 7 * * *'}</code></td>
-                <td>2026-09-05T07:00</td>
+                <td>2026-09-06T07:00</td>
                 <td><span class="badge badge-green">ok</span></td>
                 <td><code>script</code></td>
                 <td>local</td>
@@ -335,13 +335,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
             <h3>Health Dashboard</h3>
             <p>Glooko exports + WHOOP API → glucose/activity/vitals</p>
             <p class="dash-path"><code>/root/health-dashboard</code></p>
-            <p class="dash-git">Last commit: <code>9bd85cd Add Sep 3 Week 5 Day 3 - Leg Day (17K lb, 162 reps)</code></p>
+            <p class="dash-git">Last commit: <code>04eb566 Refresh health dashboard data</code></p>
             <a href="file:///root/health-dashboard/docs/index.html" class="dash-link">View Dashboard →</a>
         </div><div class="dash-card">
             <h3>Podcast Digest</h3>
             <p>RSS feeds → transcript → episode summaries</p>
             <p class="dash-path"><code>/root/podcast-digest</code></p>
-            <p class="dash-git">Last commit: <code>fcd3d73 Refresh podcast digest data</code></p>
+            <p class="dash-git">Last commit: <code>3f781c6 Refresh podcast digest data</code></p>
             <a href="file:///root/podcast-digest/templates/index.html" class="dash-link">View Dashboard →</a>
         </div><div class="dash-card">
             <h3>Personal CRM</h3>

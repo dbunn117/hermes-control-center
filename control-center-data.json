@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T14:00:54Z",
+  "generated_at": "2026-09-05T14:00:08Z",
   "profiles": [
     {
       "display": "Heath",
@@ -48,37 +48,13 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-09-04T08:00:00-07:00",
-          "last_run_at": "2026-09-03T08:02:55.845469-07:00",
+          "next_run_at": "2026-09-05T08:00:00-07:00",
+          "last_run_at": "2026-09-04T08:03:55.052824-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
           "script": "health_dashboard_refresh.sh",
           "no_agent": true,
-          "model_snapshot": null,
-          "provider_snapshot": null
-        },
-        {
-          "id": "",
-          "name": "Morning Brief + WHOOP + Overnight Hypo Check",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "5 8 * * *",
-            "display": "5 8 * * *"
-          },
-          "next_run_at": "2026-09-04T08:05:00-07:00",
-          "last_run_at": "2026-09-03T08:08:22.335583-07:00",
-          "last_status": "ok",
-          "deliver": "origin",
-          "skills": [
-            "health/ladder-workout-video-ingest",
-            "health/health-nutrition-macro-tracking",
-            "health-os-dashboard-ops"
-          ],
-          "script": null,
-          "no_agent": false,
           "model_snapshot": null,
           "provider_snapshot": null
         },
@@ -99,6 +75,30 @@
           "skills": [],
           "script": "weekly_health_report.py",
           "no_agent": true,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        },
+        {
+          "id": "",
+          "name": "Morning Brief + WHOOP + Overnight Hypo Check",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "5 8 * * *",
+            "display": "5 8 * * *"
+          },
+          "next_run_at": "2026-09-05T08:05:00-07:00",
+          "last_run_at": "2026-09-04T08:08:10.455494-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [
+            "health/ladder-workout-video-ingest",
+            "health/health-nutrition-macro-tracking",
+            "health-os-dashboard-ops"
+          ],
+          "script": null,
+          "no_agent": false,
           "model_snapshot": null,
           "provider_snapshot": null
         }
@@ -223,7 +223,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-04T06:31:35.643862+00:00",
+        "updated_at": "2026-09-05T05:58:44.863251+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -246,8 +246,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-09-04T07:21:29.414958-07:00",
-          "last_run_at": "2026-09-04T06:51:29.414958-07:00",
+          "next_run_at": "2026-09-05T07:13:26.808147-07:00",
+          "last_run_at": "2026-09-05T06:43:26.808147-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -269,8 +269,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-09-04T07:30:00-07:00",
-          "last_run_at": "2026-09-03T07:42:30.036642-07:00",
+          "next_run_at": "2026-09-05T07:30:00-07:00",
+          "last_run_at": "2026-09-04T07:42:18.426624-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -291,8 +291,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-09-04T08:15:00-07:00",
-          "last_run_at": "2026-09-03T08:15:42.928142-07:00",
+          "next_run_at": "2026-09-05T08:15:00-07:00",
+          "last_run_at": "2026-09-04T08:15:56.480488-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -311,8 +311,8 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-09-04T09:00:00-07:00",
-          "last_run_at": "2026-09-03T09:08:48.398917-07:00",
+          "next_run_at": "2026-09-05T09:00:00-07:00",
+          "last_run_at": "2026-09-04T09:05:52.387768-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -331,8 +331,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-09-04T16:00:00-07:00",
-          "last_run_at": "2026-09-03T16:03:10.993347-07:00",
+          "next_run_at": "2026-09-05T16:00:00-07:00",
+          "last_run_at": "2026-09-04T16:03:16.814388-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -354,8 +354,8 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-09-04T22:00:00-07:00",
-          "last_run_at": "2026-09-03T22:04:54.972178-07:00",
+          "next_run_at": "2026-09-05T22:00:00-07:00",
+          "last_run_at": "2026-09-04T22:00:19.494199-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -376,8 +376,8 @@
             "expr": "0 6 * * *",
             "display": "0 6 * * *"
           },
-          "next_run_at": "2026-09-05T06:00:00-07:00",
-          "last_run_at": "2026-09-04T06:07:42.349305-07:00",
+          "next_run_at": "2026-09-06T06:00:00-07:00",
+          "last_run_at": "2026-09-05T06:05:15.028931-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -399,8 +399,8 @@
             "expr": "0 7 * * *",
             "display": "0 7 * * *"
           },
-          "next_run_at": "2026-09-05T07:00:00-07:00",
-          "last_run_at": "2026-09-03T07:00:42.513721-07:00",
+          "next_run_at": "2026-09-06T07:00:00-07:00",
+          "last_run_at": "2026-09-04T07:00:55.937235-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [],
@@ -579,7 +579,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "9bd85cd Add Sep 3 Week 5 Day 3 - Leg Day (17K lb, 162 reps)",
+      "last_commit": "04eb566 Refresh health dashboard data",
       "active": "EXISTS"
     },
     {
@@ -587,7 +587,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "fcd3d73 Refresh podcast digest data",
+      "last_commit": "3f781c6 Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
