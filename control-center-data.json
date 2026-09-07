@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T14:00:21Z",
+  "generated_at": "2026-09-07T14:00:35Z",
   "profiles": [
     {
       "display": "Heath",
@@ -25,7 +25,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-06T05:45:37.865163+00:00",
+        "updated_at": "2026-09-07T04:42:26.820153+00:00",
         "active_agents": 0,
         "pid": 1137241,
         "platforms": {
@@ -50,8 +50,8 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-09-06T08:00:00-07:00",
-          "last_run_at": "2026-09-05T08:03:19.488133-07:00",
+          "next_run_at": "2026-09-07T08:00:00-07:00",
+          "last_run_at": "2026-09-06T08:03:38.729150-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
@@ -70,8 +70,8 @@
             "expr": "5 8 * * *",
             "display": "5 8 * * *"
           },
-          "next_run_at": "2026-09-06T08:05:00-07:00",
-          "last_run_at": "2026-09-05T08:07:11.371485-07:00",
+          "next_run_at": "2026-09-07T08:05:00-07:00",
+          "last_run_at": "2026-09-06T08:08:27.021382-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -225,7 +225,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-06T05:30:30.924864+00:00",
+        "updated_at": "2026-09-07T04:48:41.813101+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -248,8 +248,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-09-06T07:08:58.256404-07:00",
-          "last_run_at": "2026-09-06T06:38:58.256404-07:00",
+          "next_run_at": "2026-09-07T07:03:54.090850-07:00",
+          "last_run_at": "2026-09-07T06:33:54.090850-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -271,8 +271,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-09-06T07:30:00-07:00",
-          "last_run_at": "2026-09-05T07:41:06.542132-07:00",
+          "next_run_at": "2026-09-07T07:30:00-07:00",
+          "last_run_at": "2026-09-06T07:36:04.369810-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -293,8 +293,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-09-06T08:15:00-07:00",
-          "last_run_at": "2026-09-05T08:15:10.844953-07:00",
+          "next_run_at": "2026-09-07T08:15:00-07:00",
+          "last_run_at": "2026-09-06T08:15:23.994714-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -313,8 +313,8 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-09-06T09:00:00-07:00",
-          "last_run_at": "2026-09-05T09:07:50.740210-07:00",
+          "next_run_at": "2026-09-07T09:00:00-07:00",
+          "last_run_at": "2026-09-06T09:05:58.830827-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -333,8 +333,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-09-06T16:00:00-07:00",
-          "last_run_at": "2026-09-05T16:01:48.342809-07:00",
+          "next_run_at": "2026-09-07T16:00:00-07:00",
+          "last_run_at": "2026-09-06T16:01:37.479229-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -356,8 +356,8 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-09-06T22:00:00-07:00",
-          "last_run_at": "2026-09-05T22:00:25.759918-07:00",
+          "next_run_at": "2026-09-07T22:00:00-07:00",
+          "last_run_at": "2026-09-06T22:00:39.113340-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -367,49 +367,6 @@
           "no_agent": false,
           "model_snapshot": "deepseek/deepseek-v4-flash",
           "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
-          "name": "Daily sports briefing email",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 6 * * *",
-            "display": "0 6 * * *"
-          },
-          "next_run_at": "2026-09-07T06:00:00-07:00",
-          "last_run_at": "2026-09-06T06:03:19.220408-07:00",
-          "last_status": "ok",
-          "deliver": "local",
-          "skills": [
-            "agentmail",
-            "personalized-briefings"
-          ],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": "deepseek/deepseek-v4-flash",
-          "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
-          "name": "Daily Hermes Control Center refresh",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 7 * * *",
-            "display": "0 7 * * *"
-          },
-          "next_run_at": "2026-09-07T07:00:00-07:00",
-          "last_run_at": "2026-09-05T07:00:10.406000-07:00",
-          "last_status": "ok",
-          "deliver": "local",
-          "skills": [],
-          "script": "refresh_control_center.py",
-          "no_agent": true,
-          "model_snapshot": null,
-          "provider_snapshot": null
         },
         {
           "id": "",
@@ -432,6 +389,49 @@
           "no_agent": false,
           "model_snapshot": "deepseek/deepseek-v4-flash",
           "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Daily sports briefing email",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 6 * * *",
+            "display": "0 6 * * *"
+          },
+          "next_run_at": "2026-09-08T06:00:00-07:00",
+          "last_run_at": "2026-09-07T06:10:00.550160-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [
+            "agentmail",
+            "personalized-briefings"
+          ],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Daily Hermes Control Center refresh",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 7 * * *",
+            "display": "0 7 * * *"
+          },
+          "next_run_at": "2026-09-08T07:00:00-07:00",
+          "last_run_at": "2026-09-06T07:00:23.570180-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [],
+          "script": "refresh_control_center.py",
+          "no_agent": true,
+          "model_snapshot": null,
+          "provider_snapshot": null
         },
         {
           "id": "",
@@ -581,7 +581,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "6a55083 Add Sep 4 rest day + Sep 5 Saturday Pull & Arms (6.5K lb, 234 reps)",
+      "last_commit": "777e64f Refresh health dashboard data",
       "active": "EXISTS"
     },
     {
@@ -589,7 +589,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "b3e0c5f Refresh podcast digest data",
+      "last_commit": "8cf133b Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
