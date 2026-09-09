@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T14:00:48Z",
+  "generated_at": "2026-09-09T14:00:04Z",
   "profiles": [
     {
       "display": "Heath",
@@ -25,7 +25,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-07T22:44:06.836065+00:00",
+        "updated_at": "2026-09-09T13:48:51.848854+00:00",
         "active_agents": 0,
         "pid": 1137241,
         "platforms": {
@@ -50,8 +50,8 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-09-08T08:00:00-07:00",
-          "last_run_at": "2026-09-07T08:03:29.945783-07:00",
+          "next_run_at": "2026-09-09T08:00:00-07:00",
+          "last_run_at": "2026-09-08T08:03:05.320808-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
@@ -70,8 +70,8 @@
             "expr": "5 8 * * *",
             "display": "5 8 * * *"
           },
-          "next_run_at": "2026-09-08T08:05:00-07:00",
-          "last_run_at": "2026-09-07T08:08:59.322127-07:00",
+          "next_run_at": "2026-09-09T08:05:00-07:00",
+          "last_run_at": "2026-09-08T08:08:25.692355-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -162,8 +162,8 @@
             "expr": "0 18 * * 1,2,3",
             "display": "0 18 * * 1,2,3"
           },
-          "next_run_at": "2026-09-08T18:00:00-07:00",
-          "last_run_at": "2026-09-07T18:11:21.879060-07:00",
+          "next_run_at": "2026-09-09T18:00:00-07:00",
+          "last_run_at": "2026-09-08T18:06:04.925320-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -225,7 +225,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-08T05:20:46.049754+00:00",
+        "updated_at": "2026-09-09T13:54:24.241237+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -248,8 +248,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-09-08T07:01:35.250538-07:00",
-          "last_run_at": "2026-09-08T06:31:35.250538-07:00",
+          "next_run_at": "2026-09-09T07:00:31.584002-07:00",
+          "last_run_at": "2026-09-09T06:30:31.584002-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -271,8 +271,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-09-08T07:30:00-07:00",
-          "last_run_at": "2026-09-07T07:40:36.101660-07:00",
+          "next_run_at": "2026-09-09T07:30:00-07:00",
+          "last_run_at": "2026-09-08T07:36:59.358115-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -293,8 +293,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-09-08T08:15:00-07:00",
-          "last_run_at": "2026-09-07T08:15:41.318458-07:00",
+          "next_run_at": "2026-09-09T08:15:00-07:00",
+          "last_run_at": "2026-09-08T08:15:51.218239-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -313,8 +313,8 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-09-08T09:00:00-07:00",
-          "last_run_at": "2026-09-07T09:02:39.781474-07:00",
+          "next_run_at": "2026-09-09T09:00:00-07:00",
+          "last_run_at": "2026-09-08T09:17:20.922365-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -333,8 +333,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-09-08T16:00:00-07:00",
-          "last_run_at": "2026-09-07T16:02:58.541676-07:00",
+          "next_run_at": "2026-09-09T16:00:00-07:00",
+          "last_run_at": "2026-09-08T16:01:19.534962-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -356,8 +356,8 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-09-08T22:00:00-07:00",
-          "last_run_at": "2026-09-07T22:00:56.479764-07:00",
+          "next_run_at": "2026-09-09T22:00:00-07:00",
+          "last_run_at": "2026-09-08T22:01:06.003720-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -378,8 +378,8 @@
             "expr": "0 6 * * *",
             "display": "0 6 * * *"
           },
-          "next_run_at": "2026-09-09T06:00:00-07:00",
-          "last_run_at": "2026-09-08T06:11:23.461042-07:00",
+          "next_run_at": "2026-09-10T06:00:00-07:00",
+          "last_run_at": "2026-09-09T06:03:10.408274-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -401,8 +401,8 @@
             "expr": "0 7 * * *",
             "display": "0 7 * * *"
           },
-          "next_run_at": "2026-09-09T07:00:00-07:00",
-          "last_run_at": "2026-09-07T07:00:37.078661-07:00",
+          "next_run_at": "2026-09-10T07:00:00-07:00",
+          "last_run_at": "2026-09-08T07:00:50.680267-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [],
@@ -581,7 +581,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "4d082c2 Add Sep 7 Week 6 Day 1 - Full Body + Core (14K lb, 281 reps)",
+      "last_commit": "1fdff67 Add Sep 8 Week 6 Day 2 - Upper Push + Shoulders + Core (7.4K lb, 225 reps)",
       "active": "EXISTS"
     },
     {
@@ -589,7 +589,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "ad86781 Refresh podcast digest data",
+      "last_commit": "2f1c12d Fix stale path/flag references in README",
       "active": "EXISTS"
     },
     {
