@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T14:00:19Z",
+  "generated_at": "2026-09-11T14:00:36Z",
   "profiles": [
     {
       "display": "Heath",
@@ -25,7 +25,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-10T03:20:24.648900+00:00",
+        "updated_at": "2026-09-10T23:48:24.694097+00:00",
         "active_agents": 0,
         "pid": 1137241,
         "platforms": {
@@ -50,8 +50,8 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-09-10T08:00:00-07:00",
-          "last_run_at": "2026-09-09T08:04:07.126523-07:00",
+          "next_run_at": "2026-09-11T08:00:00-07:00",
+          "last_run_at": "2026-09-10T08:03:43.121506-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
@@ -70,8 +70,8 @@
             "expr": "5 8 * * *",
             "display": "5 8 * * *"
           },
-          "next_run_at": "2026-09-10T08:05:00-07:00",
-          "last_run_at": "2026-09-09T08:09:41.314844-07:00",
+          "next_run_at": "2026-09-11T08:05:00-07:00",
+          "last_run_at": "2026-09-10T08:06:39.963901-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -154,26 +154,6 @@
       "jobs": [
         {
           "id": "",
-          "name": "Paula's Local Weekend Activities & Weather Briefing",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 20 * * 4",
-            "display": "0 20 * * 4"
-          },
-          "next_run_at": "2026-09-10T20:00:00-07:00",
-          "last_run_at": "2026-09-03T20:11:29.949306-07:00",
-          "last_status": "ok",
-          "deliver": "origin",
-          "skills": [],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": "deepseek/deepseek-v4-flash",
-          "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
           "name": "Toddler Twin Evening Activity & Toy List",
           "active": true,
           "state": "scheduled",
@@ -184,6 +164,26 @@
           },
           "next_run_at": "2026-09-14T18:00:00-07:00",
           "last_run_at": "2026-09-09T18:05:42.100724-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Paula's Local Weekend Activities & Weather Briefing",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 20 * * 4",
+            "display": "0 20 * * 4"
+          },
+          "next_run_at": "2026-09-17T20:00:00-07:00",
+          "last_run_at": "2026-09-10T20:07:52.837624-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -225,7 +225,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-10T05:34:32.488679+00:00",
+        "updated_at": "2026-09-11T05:53:30.934701+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -248,8 +248,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-09-10T07:29:05.793905-07:00",
-          "last_run_at": "2026-09-10T06:59:05.793905-07:00",
+          "next_run_at": "2026-09-11T07:05:28.451035-07:00",
+          "last_run_at": "2026-09-11T06:35:28.451035-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -271,8 +271,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-09-10T07:30:00-07:00",
-          "last_run_at": "2026-09-09T07:44:45.082807-07:00",
+          "next_run_at": "2026-09-11T07:30:00-07:00",
+          "last_run_at": "2026-09-10T07:43:57.364197-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -293,8 +293,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-09-10T08:15:00-07:00",
-          "last_run_at": "2026-09-09T08:15:06.815314-07:00",
+          "next_run_at": "2026-09-11T08:15:00-07:00",
+          "last_run_at": "2026-09-10T08:15:22.554900-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -313,8 +313,28 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-09-10T09:00:00-07:00",
-          "last_run_at": "2026-09-09T09:07:08.427206-07:00",
+          "next_run_at": "2026-09-11T09:00:00-07:00",
+          "last_run_at": "2026-09-10T09:05:30.420852-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        },
+        {
+          "id": "",
+          "name": "Hourly AI & Markets Brief",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 6,9,12,15,18 * * 1-5",
+            "display": "0 6,9,12,15,18 * * 1-5"
+          },
+          "next_run_at": "2026-09-11T09:00:00-07:00",
+          "last_run_at": "2026-09-11T06:02:34.136854-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -333,8 +353,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-09-10T16:00:00-07:00",
-          "last_run_at": "2026-09-09T16:00:51.764412-07:00",
+          "next_run_at": "2026-09-11T16:00:00-07:00",
+          "last_run_at": "2026-09-10T16:01:26.660409-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -356,8 +376,8 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-09-10T22:00:00-07:00",
-          "last_run_at": "2026-09-09T22:00:23.200971-07:00",
+          "next_run_at": "2026-09-11T22:00:00-07:00",
+          "last_run_at": "2026-09-10T22:00:41.673275-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -378,8 +398,8 @@
             "expr": "0 6 * * *",
             "display": "0 6 * * *"
           },
-          "next_run_at": "2026-09-11T06:00:00-07:00",
-          "last_run_at": "2026-09-10T06:03:34.912133-07:00",
+          "next_run_at": "2026-09-12T06:00:00-07:00",
+          "last_run_at": "2026-09-11T06:05:40.965570-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -401,8 +421,8 @@
             "expr": "0 7 * * *",
             "display": "0 7 * * *"
           },
-          "next_run_at": "2026-09-11T07:00:00-07:00",
-          "last_run_at": "2026-09-09T07:00:07.906523-07:00",
+          "next_run_at": "2026-09-12T07:00:00-07:00",
+          "last_run_at": "2026-09-10T07:00:22.552893-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [],
@@ -581,7 +601,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "e516dcd Add Sep 9 Week 6 Day 3 - Leg Day (18K lb, 178 reps) + fix log path",
+      "last_commit": "ded1140 Add Sep 10 Week 6 Day 4 - Pull & Arms (9.1K lb, 168 reps)",
       "active": "EXISTS"
     },
     {
@@ -589,7 +609,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "3f2943f Refresh podcast digest data",
+      "last_commit": "a141217 Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
