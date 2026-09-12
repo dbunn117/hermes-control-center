@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T14:00:36Z",
+  "generated_at": "2026-09-12T14:00:51Z",
   "profiles": [
     {
       "display": "Heath",
@@ -50,37 +50,13 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-09-11T08:00:00-07:00",
-          "last_run_at": "2026-09-10T08:03:43.121506-07:00",
+          "next_run_at": "2026-09-12T08:00:00-07:00",
+          "last_run_at": "2026-09-11T08:03:12.745739-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
           "script": "health_dashboard_refresh.sh",
           "no_agent": true,
-          "model_snapshot": null,
-          "provider_snapshot": null
-        },
-        {
-          "id": "",
-          "name": "Morning Brief + WHOOP + Overnight Hypo Check",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "5 8 * * *",
-            "display": "5 8 * * *"
-          },
-          "next_run_at": "2026-09-11T08:05:00-07:00",
-          "last_run_at": "2026-09-10T08:06:39.963901-07:00",
-          "last_status": "ok",
-          "deliver": "origin",
-          "skills": [
-            "health/ladder-workout-video-ingest",
-            "health/health-nutrition-macro-tracking",
-            "health-os-dashboard-ops"
-          ],
-          "script": null,
-          "no_agent": false,
           "model_snapshot": null,
           "provider_snapshot": null
         },
@@ -101,6 +77,30 @@
           "skills": [],
           "script": "weekly_health_report.py",
           "no_agent": true,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        },
+        {
+          "id": "",
+          "name": "Morning Brief + WHOOP + Overnight Hypo Check",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "5 8 * * *",
+            "display": "5 8 * * *"
+          },
+          "next_run_at": "2026-09-12T08:05:00-07:00",
+          "last_run_at": "2026-09-11T08:06:52.020704-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [
+            "health/ladder-workout-video-ingest",
+            "health/health-nutrition-macro-tracking",
+            "health-os-dashboard-ops"
+          ],
+          "script": null,
+          "no_agent": false,
           "model_snapshot": null,
           "provider_snapshot": null
         }
@@ -248,8 +248,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-09-11T07:05:28.451035-07:00",
-          "last_run_at": "2026-09-11T06:35:28.451035-07:00",
+          "next_run_at": "2026-09-12T07:03:11.441360-07:00",
+          "last_run_at": "2026-09-12T06:33:11.441360-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -271,8 +271,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-09-11T07:30:00-07:00",
-          "last_run_at": "2026-09-10T07:43:57.364197-07:00",
+          "next_run_at": "2026-09-12T07:30:00-07:00",
+          "last_run_at": "2026-09-11T07:41:34.270718-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -293,8 +293,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-09-11T08:15:00-07:00",
-          "last_run_at": "2026-09-10T08:15:22.554900-07:00",
+          "next_run_at": "2026-09-12T08:15:00-07:00",
+          "last_run_at": "2026-09-11T08:15:39.373082-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -313,28 +313,8 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-09-11T09:00:00-07:00",
-          "last_run_at": "2026-09-10T09:05:30.420852-07:00",
-          "last_status": "ok",
-          "deliver": "origin",
-          "skills": [],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": null,
-          "provider_snapshot": null
-        },
-        {
-          "id": "",
-          "name": "Hourly AI & Markets Brief",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 6,9,12,15,18 * * 1-5",
-            "display": "0 6,9,12,15,18 * * 1-5"
-          },
-          "next_run_at": "2026-09-11T09:00:00-07:00",
-          "last_run_at": "2026-09-11T06:02:34.136854-07:00",
+          "next_run_at": "2026-09-12T09:00:00-07:00",
+          "last_run_at": "2026-09-11T09:01:16.840750-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -353,8 +333,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-09-11T16:00:00-07:00",
-          "last_run_at": "2026-09-10T16:01:26.660409-07:00",
+          "next_run_at": "2026-09-12T16:00:00-07:00",
+          "last_run_at": "2026-09-11T16:02:05.071194-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -376,8 +356,8 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-09-11T22:00:00-07:00",
-          "last_run_at": "2026-09-10T22:00:41.673275-07:00",
+          "next_run_at": "2026-09-12T22:00:00-07:00",
+          "last_run_at": "2026-09-11T22:00:55.294970-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -398,8 +378,8 @@
             "expr": "0 6 * * *",
             "display": "0 6 * * *"
           },
-          "next_run_at": "2026-09-12T06:00:00-07:00",
-          "last_run_at": "2026-09-11T06:05:40.965570-07:00",
+          "next_run_at": "2026-09-13T06:00:00-07:00",
+          "last_run_at": "2026-09-12T06:04:05.472020-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -421,13 +401,33 @@
             "expr": "0 7 * * *",
             "display": "0 7 * * *"
           },
-          "next_run_at": "2026-09-12T07:00:00-07:00",
-          "last_run_at": "2026-09-10T07:00:22.552893-07:00",
+          "next_run_at": "2026-09-13T07:00:00-07:00",
+          "last_run_at": "2026-09-11T07:00:38.776349-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [],
           "script": "refresh_control_center.py",
           "no_agent": true,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        },
+        {
+          "id": "",
+          "name": "Hourly AI & Markets Brief",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 6,9,12,15,18 * * 1-5",
+            "display": "0 6,9,12,15,18 * * 1-5"
+          },
+          "next_run_at": "2026-09-14T06:00:00-07:00",
+          "last_run_at": "2026-09-11T18:02:11.112086-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [],
+          "script": null,
+          "no_agent": false,
           "model_snapshot": null,
           "provider_snapshot": null
         },
@@ -601,7 +601,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "ded1140 Add Sep 10 Week 6 Day 4 - Pull & Arms (9.1K lb, 168 reps)",
+      "last_commit": "9ca4821 Refresh health dashboard data",
       "active": "EXISTS"
     },
     {
@@ -609,7 +609,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "a141217 Refresh podcast digest data",
+      "last_commit": "aaf917e Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
