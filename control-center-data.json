@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T14:00:51Z",
+  "generated_at": "2026-09-13T14:00:07Z",
   "profiles": [
     {
       "display": "Heath",
@@ -25,7 +25,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-10T23:48:24.694097+00:00",
+        "updated_at": "2026-09-12T22:03:34.421373+00:00",
         "active_agents": 0,
         "pid": 1137241,
         "platforms": {
@@ -33,7 +33,7 @@
             "state": "connected",
             "error_code": null,
             "error_message": null,
-            "updated_at": "2026-08-18T20:15:37.751044+00:00",
+            "updated_at": "2026-09-12T22:03:34.421397+00:00",
             "needs_attention": false,
             "retrying_since": null
           }
@@ -50,32 +50,12 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-09-12T08:00:00-07:00",
-          "last_run_at": "2026-09-11T08:03:12.745739-07:00",
+          "next_run_at": "2026-09-13T08:00:00-07:00",
+          "last_run_at": "2026-09-12T08:03:30.492189-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
           "script": "health_dashboard_refresh.sh",
-          "no_agent": true,
-          "model_snapshot": null,
-          "provider_snapshot": null
-        },
-        {
-          "id": "",
-          "name": "Weekly Health OS report",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 8 * * 6",
-            "display": "0 8 * * 6"
-          },
-          "next_run_at": "2026-09-12T08:00:00-07:00",
-          "last_run_at": "2026-09-05T08:00:18.756994-07:00",
-          "last_status": "ok",
-          "deliver": "telegram",
-          "skills": [],
-          "script": "weekly_health_report.py",
           "no_agent": true,
           "model_snapshot": null,
           "provider_snapshot": null
@@ -90,8 +70,8 @@
             "expr": "5 8 * * *",
             "display": "5 8 * * *"
           },
-          "next_run_at": "2026-09-12T08:05:00-07:00",
-          "last_run_at": "2026-09-11T08:06:52.020704-07:00",
+          "next_run_at": "2026-09-13T08:05:00-07:00",
+          "last_run_at": "2026-09-12T08:07:33.060498-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -101,6 +81,26 @@
           ],
           "script": null,
           "no_agent": false,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        },
+        {
+          "id": "",
+          "name": "Weekly Health OS report",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 8 * * 6",
+            "display": "0 8 * * 6"
+          },
+          "next_run_at": "2026-09-19T08:00:00-07:00",
+          "last_run_at": "2026-09-12T08:00:45.308700-07:00",
+          "last_status": "ok",
+          "deliver": "telegram",
+          "skills": [],
+          "script": "weekly_health_report.py",
+          "no_agent": true,
           "model_snapshot": null,
           "provider_snapshot": null
         }
@@ -137,7 +137,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-02T19:58:20.351575+00:00",
+        "updated_at": "2026-09-12T22:05:52.969379+00:00",
         "active_agents": 0,
         "pid": 1029357,
         "platforms": {
@@ -145,7 +145,7 @@
             "state": "connected",
             "error_code": null,
             "error_message": null,
-            "updated_at": "2026-08-15T22:31:39.221389+00:00",
+            "updated_at": "2026-09-12T22:05:52.969405+00:00",
             "needs_attention": false,
             "retrying_since": null
           }
@@ -225,7 +225,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-11T05:53:30.934701+00:00",
+        "updated_at": "2026-09-12T22:14:28.322093+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -233,7 +233,7 @@
             "state": "connected",
             "error_code": null,
             "error_message": null,
-            "updated_at": "2026-07-29T06:33:16.306932+00:00"
+            "updated_at": "2026-09-12T22:14:28.322118+00:00"
           }
         }
       },
@@ -248,8 +248,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-09-12T07:03:11.441360-07:00",
-          "last_run_at": "2026-09-12T06:33:11.441360-07:00",
+          "next_run_at": "2026-09-13T07:24:21.961862-07:00",
+          "last_run_at": "2026-09-13T06:54:21.961862-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -271,8 +271,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-09-12T07:30:00-07:00",
-          "last_run_at": "2026-09-11T07:41:34.270718-07:00",
+          "next_run_at": "2026-09-13T07:30:00-07:00",
+          "last_run_at": "2026-09-12T07:40:44.360192-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -293,8 +293,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-09-12T08:15:00-07:00",
-          "last_run_at": "2026-09-11T08:15:39.373082-07:00",
+          "next_run_at": "2026-09-13T08:15:00-07:00",
+          "last_run_at": "2026-09-12T08:15:53.810189-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -313,8 +313,8 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-09-12T09:00:00-07:00",
-          "last_run_at": "2026-09-11T09:01:16.840750-07:00",
+          "next_run_at": "2026-09-13T09:00:00-07:00",
+          "last_run_at": "2026-09-12T09:01:51.495172-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -333,8 +333,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-09-12T16:00:00-07:00",
-          "last_run_at": "2026-09-11T16:02:05.071194-07:00",
+          "next_run_at": "2026-09-13T16:00:00-07:00",
+          "last_run_at": "2026-09-12T16:01:43.703730-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -356,8 +356,8 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-09-12T22:00:00-07:00",
-          "last_run_at": "2026-09-11T22:00:55.294970-07:00",
+          "next_run_at": "2026-09-13T22:00:00-07:00",
+          "last_run_at": "2026-09-12T22:01:10.248681-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -378,8 +378,8 @@
             "expr": "0 6 * * *",
             "display": "0 6 * * *"
           },
-          "next_run_at": "2026-09-13T06:00:00-07:00",
-          "last_run_at": "2026-09-12T06:04:05.472020-07:00",
+          "next_run_at": "2026-09-14T06:00:00-07:00",
+          "last_run_at": "2026-09-13T06:04:59.348141-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -390,26 +390,6 @@
           "no_agent": false,
           "model_snapshot": "deepseek/deepseek-v4-flash",
           "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
-          "name": "Daily Hermes Control Center refresh",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 7 * * *",
-            "display": "0 7 * * *"
-          },
-          "next_run_at": "2026-09-13T07:00:00-07:00",
-          "last_run_at": "2026-09-11T07:00:38.776349-07:00",
-          "last_status": "ok",
-          "deliver": "local",
-          "skills": [],
-          "script": "refresh_control_center.py",
-          "no_agent": true,
-          "model_snapshot": null,
-          "provider_snapshot": null
         },
         {
           "id": "",
@@ -428,6 +408,26 @@
           "skills": [],
           "script": null,
           "no_agent": false,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        },
+        {
+          "id": "",
+          "name": "Daily Hermes Control Center refresh",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 7 * * *",
+            "display": "0 7 * * *"
+          },
+          "next_run_at": "2026-09-14T07:00:00-07:00",
+          "last_run_at": "2026-09-12T07:00:53.044580-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [],
+          "script": "refresh_control_center.py",
+          "no_agent": true,
           "model_snapshot": null,
           "provider_snapshot": null
         },
@@ -601,7 +601,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "9ca4821 Refresh health dashboard data",
+      "last_commit": "0f19005 Refresh health dashboard data",
       "active": "EXISTS"
     },
     {
@@ -609,7 +609,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "aaf917e Refresh podcast digest data",
+      "last_commit": "9f798ca Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
