@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T14:00:42Z",
+  "generated_at": "2026-09-16T14:00:03Z",
   "profiles": [
     {
       "display": "Heath",
@@ -50,8 +50,8 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-09-15T08:00:00-07:00",
-          "last_run_at": "2026-09-14T08:04:03.127034-07:00",
+          "next_run_at": "2026-09-16T08:00:00-07:00",
+          "last_run_at": "2026-09-15T08:04:27.130007-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
@@ -70,8 +70,8 @@
             "expr": "5 8 * * *",
             "display": "5 8 * * *"
           },
-          "next_run_at": "2026-09-15T08:05:00-07:00",
-          "last_run_at": "2026-09-14T08:08:16.738619-07:00",
+          "next_run_at": "2026-09-16T08:05:00-07:00",
+          "last_run_at": "2026-09-15T08:08:38.115068-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -162,8 +162,8 @@
             "expr": "0 18 * * 1,2,3",
             "display": "0 18 * * 1,2,3"
           },
-          "next_run_at": "2026-09-15T18:00:00-07:00",
-          "last_run_at": "2026-09-14T18:06:12.791197-07:00",
+          "next_run_at": "2026-09-16T18:00:00-07:00",
+          "last_run_at": "2026-09-15T18:05:44.058799-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -225,7 +225,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-15T06:11:14.784230+00:00",
+        "updated_at": "2026-09-16T05:48:46.416768+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -248,8 +248,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-09-15T07:21:04.576611-07:00",
-          "last_run_at": "2026-09-15T06:51:04.576611-07:00",
+          "next_run_at": "2026-09-16T07:24:34.372074-07:00",
+          "last_run_at": "2026-09-16T06:54:34.372074-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -271,8 +271,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-09-15T07:30:00-07:00",
-          "last_run_at": "2026-09-14T07:45:07.301334-07:00",
+          "next_run_at": "2026-09-16T07:30:00-07:00",
+          "last_run_at": "2026-09-15T07:44:39.164742-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -293,8 +293,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-09-15T08:15:00-07:00",
-          "last_run_at": "2026-09-14T08:15:25.927323-07:00",
+          "next_run_at": "2026-09-16T08:15:00-07:00",
+          "last_run_at": "2026-09-15T08:15:46.408411-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -313,8 +313,8 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-09-15T09:00:00-07:00",
-          "last_run_at": "2026-09-14T09:01:41.908947-07:00",
+          "next_run_at": "2026-09-16T09:00:00-07:00",
+          "last_run_at": "2026-09-15T09:02:10.850190-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -333,8 +333,8 @@
             "expr": "0 6,9,12,15,18 * * 1-5",
             "display": "0 6,9,12,15,18 * * 1-5"
           },
-          "next_run_at": "2026-09-15T09:00:00-07:00",
-          "last_run_at": "2026-09-15T06:03:30.904404-07:00",
+          "next_run_at": "2026-09-16T09:00:00-07:00",
+          "last_run_at": "2026-09-16T06:01:26.267967-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -353,8 +353,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-09-15T16:00:00-07:00",
-          "last_run_at": "2026-09-14T16:01:58.129142-07:00",
+          "next_run_at": "2026-09-16T16:00:00-07:00",
+          "last_run_at": "2026-09-15T16:02:09.133535-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -376,8 +376,8 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-09-15T22:00:00-07:00",
-          "last_run_at": "2026-09-14T22:00:49.220988-07:00",
+          "next_run_at": "2026-09-16T22:00:00-07:00",
+          "last_run_at": "2026-09-15T22:01:13.391547-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -398,8 +398,8 @@
             "expr": "0 6 * * *",
             "display": "0 6 * * *"
           },
-          "next_run_at": "2026-09-16T06:00:00-07:00",
-          "last_run_at": "2026-09-15T06:10:14.460085-07:00",
+          "next_run_at": "2026-09-17T06:00:00-07:00",
+          "last_run_at": "2026-09-16T06:06:38.528932-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -421,8 +421,8 @@
             "expr": "0 7 * * *",
             "display": "0 7 * * *"
           },
-          "next_run_at": "2026-09-16T07:00:00-07:00",
-          "last_run_at": "2026-09-14T07:00:26.294949-07:00",
+          "next_run_at": "2026-09-17T07:00:00-07:00",
+          "last_run_at": "2026-09-15T07:00:45.472595-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [],
@@ -601,7 +601,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "025f40e Add Sep 14 Week 7 Day 1 - Full Body (19K lb, 289 reps) + weekend log",
+      "last_commit": "ed63fbc Refresh health dashboard data",
       "active": "EXISTS"
     },
     {
@@ -609,7 +609,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "97d9677 Refresh podcast digest data",
+      "last_commit": "15848de Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
