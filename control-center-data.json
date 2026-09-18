@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T14:00:22Z",
+  "generated_at": "2026-09-18T14:00:43Z",
   "profiles": [
     {
       "display": "Heath",
@@ -25,7 +25,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-17T05:32:49.658938+00:00",
+        "updated_at": "2026-09-17T23:16:42.860087+00:00",
         "active_agents": 0,
         "pid": 1137241,
         "platforms": {
@@ -50,8 +50,8 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-09-17T08:00:00-07:00",
-          "last_run_at": "2026-09-16T08:04:18.340411-07:00",
+          "next_run_at": "2026-09-18T08:00:00-07:00",
+          "last_run_at": "2026-09-17T08:04:00.915939-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
@@ -70,8 +70,8 @@
             "expr": "5 8 * * *",
             "display": "5 8 * * *"
           },
-          "next_run_at": "2026-09-17T08:05:00-07:00",
-          "last_run_at": "2026-09-16T08:07:52.275812-07:00",
+          "next_run_at": "2026-09-18T08:05:00-07:00",
+          "last_run_at": "2026-09-17T08:07:13.299332-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -94,9 +94,9 @@
             "expr": "30 9 * * *",
             "display": "30 9 * * *"
           },
-          "next_run_at": "2026-09-17T09:30:00-07:00",
-          "last_run_at": null,
-          "last_status": null,
+          "next_run_at": "2026-09-18T09:30:00-07:00",
+          "last_run_at": "2026-09-17T09:31:19.329533-07:00",
+          "last_status": "ok",
           "deliver": "origin",
           "skills": [],
           "script": null,
@@ -157,7 +157,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-12T22:05:52.969379+00:00",
+        "updated_at": "2026-09-18T04:39:51.371034+00:00",
         "active_agents": 0,
         "pid": 1029357,
         "platforms": {
@@ -174,26 +174,6 @@
       "jobs": [
         {
           "id": "",
-          "name": "Paula's Local Weekend Activities & Weather Briefing",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 20 * * 4",
-            "display": "0 20 * * 4"
-          },
-          "next_run_at": "2026-09-17T20:00:00-07:00",
-          "last_run_at": "2026-09-10T20:07:52.837624-07:00",
-          "last_status": "ok",
-          "deliver": "origin",
-          "skills": [],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": "deepseek/deepseek-v4-flash",
-          "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
           "name": "Toddler Twin Evening Activity & Toy List",
           "active": true,
           "state": "scheduled",
@@ -204,6 +184,26 @@
           },
           "next_run_at": "2026-09-21T18:00:00-07:00",
           "last_run_at": "2026-09-16T18:09:46.089218-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Paula's Local Weekend Activities & Weather Briefing",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 20 * * 4",
+            "display": "0 20 * * 4"
+          },
+          "next_run_at": "2026-09-24T20:00:00-07:00",
+          "last_run_at": "2026-09-17T20:09:12.722749-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -245,7 +245,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-17T05:32:46.115328+00:00",
+        "updated_at": "2026-09-18T05:05:15.282413+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -268,8 +268,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-09-17T07:25:41.205057-07:00",
-          "last_run_at": "2026-09-17T06:55:41.205057-07:00",
+          "next_run_at": "2026-09-18T07:16:24.462743-07:00",
+          "last_run_at": "2026-09-18T06:46:24.462743-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -291,8 +291,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-09-17T07:30:00-07:00",
-          "last_run_at": "2026-09-16T07:44:16.892311-07:00",
+          "next_run_at": "2026-09-18T07:30:00-07:00",
+          "last_run_at": "2026-09-17T07:42:32.499627-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -313,8 +313,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-09-17T08:15:00-07:00",
-          "last_run_at": "2026-09-16T08:15:07.410654-07:00",
+          "next_run_at": "2026-09-18T08:15:00-07:00",
+          "last_run_at": "2026-09-17T08:15:26.418663-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -333,8 +333,8 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-09-17T09:00:00-07:00",
-          "last_run_at": "2026-09-16T09:01:00.736756-07:00",
+          "next_run_at": "2026-09-18T09:00:00-07:00",
+          "last_run_at": "2026-09-17T09:00:50.097081-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -353,8 +353,8 @@
             "expr": "0 6,9,12,15,18 * * 1-5",
             "display": "0 6,9,12,15,18 * * 1-5"
           },
-          "next_run_at": "2026-09-17T09:00:00-07:00",
-          "last_run_at": "2026-09-17T06:01:45.634737-07:00",
+          "next_run_at": "2026-09-18T09:00:00-07:00",
+          "last_run_at": "2026-09-18T06:02:54.799752-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -373,8 +373,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-09-17T16:00:00-07:00",
-          "last_run_at": "2026-09-16T16:01:38.653134-07:00",
+          "next_run_at": "2026-09-18T16:00:00-07:00",
+          "last_run_at": "2026-09-17T16:01:15.882992-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -396,8 +396,8 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-09-17T22:00:00-07:00",
-          "last_run_at": "2026-09-16T22:00:31.259586-07:00",
+          "next_run_at": "2026-09-18T22:00:00-07:00",
+          "last_run_at": "2026-09-17T22:00:45.653278-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -418,8 +418,8 @@
             "expr": "0 6 * * *",
             "display": "0 6 * * *"
           },
-          "next_run_at": "2026-09-18T06:00:00-07:00",
-          "last_run_at": "2026-09-17T06:04:49.710935-07:00",
+          "next_run_at": "2026-09-19T06:00:00-07:00",
+          "last_run_at": "2026-09-18T06:04:48.017122-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -441,8 +441,8 @@
             "expr": "0 7 * * *",
             "display": "0 7 * * *"
           },
-          "next_run_at": "2026-09-18T07:00:00-07:00",
-          "last_run_at": "2026-09-16T07:00:07.223398-07:00",
+          "next_run_at": "2026-09-19T07:00:00-07:00",
+          "last_run_at": "2026-09-17T07:00:25.324917-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [],
@@ -621,7 +621,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "8af6f8b Update streak tracker - gamified TIR goals",
+      "last_commit": "3f227de Add Sep 17 Week 7 Day 3 - Leg Day (14K lb, 178 reps)",
       "active": "EXISTS"
     },
     {
@@ -629,7 +629,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "e3f98d4 Refresh podcast digest data",
+      "last_commit": "58749af Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
