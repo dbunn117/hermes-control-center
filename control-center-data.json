@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T14:00:28Z",
+  "generated_at": "2026-09-24T14:00:46Z",
   "profiles": [
     {
       "display": "Heath",
@@ -25,7 +25,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-22T06:37:30.551248+00:00",
+        "updated_at": "2026-09-24T05:04:57.950139+00:00",
         "active_agents": 0,
         "pid": 1137241,
         "platforms": {
@@ -50,8 +50,8 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-09-23T08:00:00-07:00",
-          "last_run_at": "2026-09-22T08:04:48.409466-07:00",
+          "next_run_at": "2026-09-24T08:00:00-07:00",
+          "last_run_at": "2026-09-23T08:04:20.846958-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
@@ -70,8 +70,8 @@
             "expr": "5 8 * * *",
             "display": "5 8 * * *"
           },
-          "next_run_at": "2026-09-23T08:05:00-07:00",
-          "last_run_at": "2026-09-22T08:07:50.691165-07:00",
+          "next_run_at": "2026-09-24T08:05:00-07:00",
+          "last_run_at": "2026-09-23T08:07:43.024003-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -94,8 +94,8 @@
             "expr": "30 9 * * *",
             "display": "30 9 * * *"
           },
-          "next_run_at": "2026-09-23T09:30:00-07:00",
-          "last_run_at": "2026-09-22T09:31:37.246991-07:00",
+          "next_run_at": "2026-09-24T09:30:00-07:00",
+          "last_run_at": "2026-09-23T09:31:47.509793-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -174,26 +174,6 @@
       "jobs": [
         {
           "id": "",
-          "name": "Toddler Twin Evening Activity & Toy List",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 18 * * 1,2,3",
-            "display": "0 18 * * 1,2,3"
-          },
-          "next_run_at": "2026-09-23T18:00:00-07:00",
-          "last_run_at": "2026-09-22T18:03:55.253371-07:00",
-          "last_status": "ok",
-          "deliver": "origin",
-          "skills": [],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": "deepseek/deepseek-v4-flash",
-          "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
           "name": "Paula's Local Weekend Activities & Weather Briefing",
           "active": true,
           "state": "scheduled",
@@ -204,6 +184,26 @@
           },
           "next_run_at": "2026-09-24T20:00:00-07:00",
           "last_run_at": "2026-09-17T20:09:12.722749-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Toddler Twin Evening Activity & Toy List",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 18 * * 1,2,3",
+            "display": "0 18 * * 1,2,3"
+          },
+          "next_run_at": "2026-09-28T18:00:00-07:00",
+          "last_run_at": "2026-09-23T18:06:51.051617-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -245,7 +245,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-23T06:33:46.692348+00:00",
+        "updated_at": "2026-09-24T04:51:07.708310+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -268,8 +268,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-09-23T07:18:42.668003-07:00",
-          "last_run_at": "2026-09-23T06:48:42.668003-07:00",
+          "next_run_at": "2026-09-24T07:08:12.026370-07:00",
+          "last_run_at": "2026-09-24T06:38:12.026370-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -291,8 +291,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-09-23T07:30:00-07:00",
-          "last_run_at": "2026-09-22T07:41:15.412503-07:00",
+          "next_run_at": "2026-09-24T07:30:00-07:00",
+          "last_run_at": "2026-09-23T07:38:30.937856-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -313,8 +313,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-09-23T08:15:00-07:00",
-          "last_run_at": "2026-09-22T08:15:14.071064-07:00",
+          "next_run_at": "2026-09-24T08:15:00-07:00",
+          "last_run_at": "2026-09-23T08:15:31.632617-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -333,29 +333,9 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-09-23T09:00:00-07:00",
-          "last_run_at": "2026-09-22T09:00:50.391707-07:00",
+          "next_run_at": "2026-09-24T09:00:00-07:00",
+          "last_run_at": "2026-09-23T09:01:08.924096-07:00",
           "last_status": "ok",
-          "deliver": "origin",
-          "skills": [],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": null,
-          "provider_snapshot": null
-        },
-        {
-          "id": "",
-          "name": "Cancel LinkedIn Premium trial",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "once",
-            "run_at": "2026-09-23T09:00:00-07:00",
-            "display": "once at 2026-09-23 09:00"
-          },
-          "next_run_at": "2026-09-23T09:00:00-07:00",
-          "last_run_at": null,
-          "last_status": null,
           "deliver": "origin",
           "skills": [],
           "script": null,
@@ -373,8 +353,8 @@
             "expr": "0 6,9,12,15,18 * * 1-5",
             "display": "0 6,9,12,15,18 * * 1-5"
           },
-          "next_run_at": "2026-09-23T09:00:00-07:00",
-          "last_run_at": "2026-09-23T06:02:01.945874-07:00",
+          "next_run_at": "2026-09-24T09:00:00-07:00",
+          "last_run_at": "2026-09-24T06:01:46.132339-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -393,8 +373,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-09-23T16:00:00-07:00",
-          "last_run_at": "2026-09-22T16:00:48.384795-07:00",
+          "next_run_at": "2026-09-24T16:00:00-07:00",
+          "last_run_at": "2026-09-23T16:01:07.535646-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -416,8 +396,8 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-09-23T22:00:00-07:00",
-          "last_run_at": "2026-09-22T22:00:32.338969-07:00",
+          "next_run_at": "2026-09-24T22:00:00-07:00",
+          "last_run_at": "2026-09-23T22:00:59.650055-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -438,8 +418,8 @@
             "expr": "0 6 * * *",
             "display": "0 6 * * *"
           },
-          "next_run_at": "2026-09-24T06:00:00-07:00",
-          "last_run_at": "2026-09-23T06:04:18.704404-07:00",
+          "next_run_at": "2026-09-25T06:00:00-07:00",
+          "last_run_at": "2026-09-24T06:03:57.979846-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -461,8 +441,8 @@
             "expr": "0 7 * * *",
             "display": "0 7 * * *"
           },
-          "next_run_at": "2026-09-24T07:00:00-07:00",
-          "last_run_at": "2026-09-22T07:00:15.546274-07:00",
+          "next_run_at": "2026-09-25T07:00:00-07:00",
+          "last_run_at": "2026-09-23T07:00:30.150685-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [],
@@ -621,7 +601,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "092c5d0 Refresh health dashboard data",
+      "last_commit": "d30f673 Add Sep 23 Push+Shoulders+Core workout (192 reps, 7K lb)",
       "active": "EXISTS"
     },
     {
@@ -629,7 +609,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "1f71b48 Refresh podcast digest data",
+      "last_commit": "c51d9ef Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
