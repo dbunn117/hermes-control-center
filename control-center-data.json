@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T14:00:04Z",
+  "generated_at": "2026-09-26T14:00:24Z",
   "profiles": [
     {
       "display": "Heath",
@@ -25,7 +25,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-24T23:11:22.201945+00:00",
+        "updated_at": "2026-09-26T04:52:05.132796+00:00",
         "active_agents": 0,
         "pid": 1137241,
         "platforms": {
@@ -50,12 +50,32 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-09-25T08:00:00-07:00",
-          "last_run_at": "2026-09-24T08:04:27.441133-07:00",
+          "next_run_at": "2026-09-26T08:00:00-07:00",
+          "last_run_at": "2026-09-25T08:03:42.675980-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
           "script": "health_dashboard_refresh.sh",
+          "no_agent": true,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        },
+        {
+          "id": "",
+          "name": "Weekly Health OS report",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 8 * * 6",
+            "display": "0 8 * * 6"
+          },
+          "next_run_at": "2026-09-26T08:00:00-07:00",
+          "last_run_at": "2026-09-19T08:00:36.361892-07:00",
+          "last_status": "ok",
+          "deliver": "telegram",
+          "skills": [],
+          "script": "weekly_health_report.py",
           "no_agent": true,
           "model_snapshot": null,
           "provider_snapshot": null
@@ -70,8 +90,8 @@
             "expr": "5 8 * * *",
             "display": "5 8 * * *"
           },
-          "next_run_at": "2026-09-25T08:05:00-07:00",
-          "last_run_at": "2026-09-24T08:06:29.881839-07:00",
+          "next_run_at": "2026-09-26T08:05:00-07:00",
+          "last_run_at": "2026-09-25T08:08:21.763396-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -94,33 +114,13 @@
             "expr": "30 9 * * *",
             "display": "30 9 * * *"
           },
-          "next_run_at": "2026-09-25T09:30:00-07:00",
-          "last_run_at": "2026-09-24T09:31:06.201181-07:00",
+          "next_run_at": "2026-09-26T09:30:00-07:00",
+          "last_run_at": "2026-09-25T09:31:22.514484-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
           "script": null,
           "no_agent": false,
-          "model_snapshot": null,
-          "provider_snapshot": null
-        },
-        {
-          "id": "",
-          "name": "Weekly Health OS report",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 8 * * 6",
-            "display": "0 8 * * 6"
-          },
-          "next_run_at": "2026-09-26T08:00:00-07:00",
-          "last_run_at": "2026-09-19T08:00:36.361892-07:00",
-          "last_status": "ok",
-          "deliver": "telegram",
-          "skills": [],
-          "script": "weekly_health_report.py",
-          "no_agent": true,
           "model_snapshot": null,
           "provider_snapshot": null
         }
@@ -157,7 +157,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-24T14:28:29.460932+00:00",
+        "updated_at": "2026-09-26T04:38:34.510245+00:00",
         "active_agents": 0,
         "pid": 1029357,
         "platforms": {
@@ -245,7 +245,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-25T04:41:18.861955+00:00",
+        "updated_at": "2026-09-26T02:59:27.243312+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -268,8 +268,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-09-25T07:26:45.733080-07:00",
-          "last_run_at": "2026-09-25T06:56:45.733080-07:00",
+          "next_run_at": "2026-09-26T07:13:42.570666-07:00",
+          "last_run_at": "2026-09-26T06:43:42.570666-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -291,8 +291,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-09-25T07:30:00-07:00",
-          "last_run_at": "2026-09-24T07:42:05.646753-07:00",
+          "next_run_at": "2026-09-26T07:30:00-07:00",
+          "last_run_at": "2026-09-25T07:42:45.977620-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -313,8 +313,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-09-25T08:15:00-07:00",
-          "last_run_at": "2026-09-24T08:15:49.523058-07:00",
+          "next_run_at": "2026-09-26T08:15:00-07:00",
+          "last_run_at": "2026-09-25T08:15:07.844086-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -333,28 +333,8 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-09-25T09:00:00-07:00",
-          "last_run_at": "2026-09-24T09:01:42.434686-07:00",
-          "last_status": "ok",
-          "deliver": "origin",
-          "skills": [],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": null,
-          "provider_snapshot": null
-        },
-        {
-          "id": "",
-          "name": "Hourly AI & Markets Brief",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 6,9,12,15,18 * * 1-5",
-            "display": "0 6,9,12,15,18 * * 1-5"
-          },
-          "next_run_at": "2026-09-25T09:00:00-07:00",
-          "last_run_at": "2026-09-25T06:00:55.741239-07:00",
+          "next_run_at": "2026-09-26T09:00:00-07:00",
+          "last_run_at": "2026-09-25T09:00:53.414863-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -373,8 +353,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-09-25T16:00:00-07:00",
-          "last_run_at": "2026-09-24T16:01:26.756334-07:00",
+          "next_run_at": "2026-09-26T16:00:00-07:00",
+          "last_run_at": "2026-09-25T16:02:15.969026-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -396,8 +376,8 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-09-25T22:00:00-07:00",
-          "last_run_at": "2026-09-24T22:01:06.823024-07:00",
+          "next_run_at": "2026-09-26T22:00:00-07:00",
+          "last_run_at": "2026-09-25T22:00:26.192268-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -418,8 +398,8 @@
             "expr": "0 6 * * *",
             "display": "0 6 * * *"
           },
-          "next_run_at": "2026-09-26T06:00:00-07:00",
-          "last_run_at": "2026-09-25T06:03:20.884283-07:00",
+          "next_run_at": "2026-09-27T06:00:00-07:00",
+          "last_run_at": "2026-09-26T06:03:23.792014-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -441,13 +421,53 @@
             "expr": "0 7 * * *",
             "display": "0 7 * * *"
           },
-          "next_run_at": "2026-09-26T07:00:00-07:00",
-          "last_run_at": "2026-09-24T07:00:50.730727-07:00",
+          "next_run_at": "2026-09-27T07:00:00-07:00",
+          "last_run_at": "2026-09-25T07:00:08.267332-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [],
           "script": "refresh_control_center.py",
           "no_agent": true,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        },
+        {
+          "id": "",
+          "name": "Hourly AI & Markets Brief",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 6,9,12,15,18 * * 1-5",
+            "display": "0 6,9,12,15,18 * * 1-5"
+          },
+          "next_run_at": "2026-09-28T06:00:00-07:00",
+          "last_run_at": "2026-09-25T18:02:11.866664-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        },
+        {
+          "id": "",
+          "name": "Bedtime wind-down reminder",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "45 21 * * 1-4",
+            "display": "45 21 * * 1-4"
+          },
+          "next_run_at": "2026-09-28T21:45:00-07:00",
+          "last_run_at": null,
+          "last_status": null,
+          "deliver": "origin",
+          "skills": [],
+          "script": null,
+          "no_agent": false,
           "model_snapshot": null,
           "provider_snapshot": null
         },
@@ -601,7 +621,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "858acc7 Add Sep 24 Lower Body workout (168 reps, 17K lb)",
+      "last_commit": "8e17386 Refresh health dashboard data",
       "active": "EXISTS"
     },
     {
@@ -609,7 +629,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "47ca185 Refresh podcast digest data",
+      "last_commit": "de0ab3c Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
