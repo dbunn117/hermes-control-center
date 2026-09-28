@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T14:00:43Z",
+  "generated_at": "2026-09-28T14:00:00Z",
   "profiles": [
     {
       "display": "Heath",
@@ -50,8 +50,8 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-09-27T08:00:00-07:00",
-          "last_run_at": "2026-09-26T08:04:02.345013-07:00",
+          "next_run_at": "2026-09-28T08:00:00-07:00",
+          "last_run_at": "2026-09-27T08:04:41.653638-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
@@ -70,8 +70,8 @@
             "expr": "5 8 * * *",
             "display": "5 8 * * *"
           },
-          "next_run_at": "2026-09-27T08:05:00-07:00",
-          "last_run_at": "2026-09-26T08:06:47.776293-07:00",
+          "next_run_at": "2026-09-28T08:05:00-07:00",
+          "last_run_at": "2026-09-27T08:07:06.764548-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -94,8 +94,8 @@
             "expr": "30 9 * * *",
             "display": "30 9 * * *"
           },
-          "next_run_at": "2026-09-27T09:30:00-07:00",
-          "last_run_at": "2026-09-26T09:31:15.888938-07:00",
+          "next_run_at": "2026-09-28T09:30:00-07:00",
+          "last_run_at": "2026-09-27T09:31:21.509517-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -245,7 +245,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-27T05:05:13.224569+00:00",
+        "updated_at": "2026-09-28T04:55:35.309372+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -268,8 +268,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-09-27T07:01:00.930252-07:00",
-          "last_run_at": "2026-09-27T06:31:00.930252-07:00",
+          "next_run_at": "2026-09-28T07:19:57.571377-07:00",
+          "last_run_at": "2026-09-28T06:49:57.571377-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -291,8 +291,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-09-27T07:30:00-07:00",
-          "last_run_at": "2026-09-26T07:40:44.725842-07:00",
+          "next_run_at": "2026-09-28T07:30:00-07:00",
+          "last_run_at": "2026-09-27T07:32:29.385928-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -313,8 +313,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-09-27T08:15:00-07:00",
-          "last_run_at": "2026-09-26T08:15:27.629859-07:00",
+          "next_run_at": "2026-09-28T08:15:00-07:00",
+          "last_run_at": "2026-09-27T08:15:45.646010-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -333,8 +333,28 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-09-27T09:00:00-07:00",
-          "last_run_at": "2026-09-26T09:00:59.445946-07:00",
+          "next_run_at": "2026-09-28T09:00:00-07:00",
+          "last_run_at": "2026-09-27T09:01:20.899084-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": null,
+          "provider_snapshot": null
+        },
+        {
+          "id": "",
+          "name": "Hourly AI & Markets Brief",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 6,9,12,15,18 * * 1-5",
+            "display": "0 6,9,12,15,18 * * 1-5"
+          },
+          "next_run_at": "2026-09-28T09:00:00-07:00",
+          "last_run_at": "2026-09-28T06:04:41.438443-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -353,8 +373,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-09-27T16:00:00-07:00",
-          "last_run_at": "2026-09-26T16:00:55.493259-07:00",
+          "next_run_at": "2026-09-28T16:00:00-07:00",
+          "last_run_at": "2026-09-27T16:01:50.699399-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -365,91 +385,6 @@
           "no_agent": false,
           "model_snapshot": "deepseek/deepseek-v4-flash",
           "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
-          "name": "Daily Obsidian reflection prompt",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 22 * * *",
-            "display": "0 22 * * *"
-          },
-          "next_run_at": "2026-09-27T22:00:00-07:00",
-          "last_run_at": "2026-09-26T22:00:40.417187-07:00",
-          "last_status": "ok",
-          "deliver": "origin",
-          "skills": [
-            "obsidian-reflection-workflows"
-          ],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": "deepseek/deepseek-v4-flash",
-          "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
-          "name": "Daily sports briefing email",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 6 * * *",
-            "display": "0 6 * * *"
-          },
-          "next_run_at": "2026-09-28T06:00:00-07:00",
-          "last_run_at": "2026-09-27T06:05:10.601051-07:00",
-          "last_status": "ok",
-          "deliver": "local",
-          "skills": [
-            "agentmail",
-            "personalized-briefings"
-          ],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": "deepseek/deepseek-v4-flash",
-          "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
-          "name": "Hourly AI & Markets Brief",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 6,9,12,15,18 * * 1-5",
-            "display": "0 6,9,12,15,18 * * 1-5"
-          },
-          "next_run_at": "2026-09-28T06:00:00-07:00",
-          "last_run_at": "2026-09-25T18:02:11.866664-07:00",
-          "last_status": "ok",
-          "deliver": "origin",
-          "skills": [],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": null,
-          "provider_snapshot": null
-        },
-        {
-          "id": "",
-          "name": "Daily Hermes Control Center refresh",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "0 7 * * *",
-            "display": "0 7 * * *"
-          },
-          "next_run_at": "2026-09-28T07:00:00-07:00",
-          "last_run_at": "2026-09-26T07:00:26.841359-07:00",
-          "last_status": "ok",
-          "deliver": "local",
-          "skills": [],
-          "script": "refresh_control_center.py",
-          "no_agent": true,
-          "model_snapshot": null,
-          "provider_snapshot": null
         },
         {
           "id": "",
@@ -473,6 +408,28 @@
         },
         {
           "id": "",
+          "name": "Daily Obsidian reflection prompt",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 22 * * *",
+            "display": "0 22 * * *"
+          },
+          "next_run_at": "2026-09-28T22:00:00-07:00",
+          "last_run_at": "2026-09-27T22:01:06.110991-07:00",
+          "last_status": "ok",
+          "deliver": "origin",
+          "skills": [
+            "obsidian-reflection-workflows"
+          ],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
           "name": "Weekly Peaches ear cleaning email reminder",
           "active": true,
           "state": "scheduled",
@@ -492,6 +449,49 @@
           "no_agent": false,
           "model_snapshot": "deepseek/deepseek-v4-flash",
           "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Daily sports briefing email",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 6 * * *",
+            "display": "0 6 * * *"
+          },
+          "next_run_at": "2026-09-29T06:00:00-07:00",
+          "last_run_at": "2026-09-28T06:09:49.851157-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [
+            "agentmail",
+            "personalized-briefings"
+          ],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Daily Hermes Control Center refresh",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "0 7 * * *",
+            "display": "0 7 * * *"
+          },
+          "next_run_at": "2026-09-29T07:00:00-07:00",
+          "last_run_at": "2026-09-27T07:00:45.191330-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [],
+          "script": "refresh_control_center.py",
+          "no_agent": true,
+          "model_snapshot": null,
+          "provider_snapshot": null
         },
         {
           "id": "",
@@ -621,7 +621,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "cd78d4d Refresh health dashboard data",
+      "last_commit": "e9162d0 Refresh health dashboard data",
       "active": "EXISTS"
     },
     {
@@ -629,7 +629,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "f2d8bdb Refresh podcast digest data",
+      "last_commit": "fd2fd83 Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
