@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T14:00:00Z",
+  "generated_at": "2026-09-29T14:00:20Z",
   "profiles": [
     {
       "display": "Heath",
@@ -25,7 +25,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-27T05:04:42.284248+00:00",
+        "updated_at": "2026-09-28T23:06:26.849172+00:00",
         "active_agents": 0,
         "pid": 1137241,
         "platforms": {
@@ -50,8 +50,8 @@
             "expr": "0 8 * * *",
             "display": "0 8 * * *"
           },
-          "next_run_at": "2026-09-28T08:00:00-07:00",
-          "last_run_at": "2026-09-27T08:04:41.653638-07:00",
+          "next_run_at": "2026-09-29T08:00:00-07:00",
+          "last_run_at": "2026-09-28T08:03:49.005849-07:00",
           "last_status": "ok",
           "deliver": "telegram",
           "skills": [],
@@ -70,8 +70,8 @@
             "expr": "5 8 * * *",
             "display": "5 8 * * *"
           },
-          "next_run_at": "2026-09-28T08:05:00-07:00",
-          "last_run_at": "2026-09-27T08:07:06.764548-07:00",
+          "next_run_at": "2026-09-29T08:05:00-07:00",
+          "last_run_at": "2026-09-28T08:06:20.740884-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -94,8 +94,8 @@
             "expr": "30 9 * * *",
             "display": "30 9 * * *"
           },
-          "next_run_at": "2026-09-28T09:30:00-07:00",
-          "last_run_at": "2026-09-27T09:31:21.509517-07:00",
+          "next_run_at": "2026-09-29T09:30:00-07:00",
+          "last_run_at": "2026-09-28T09:32:40.729053-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -182,8 +182,8 @@
             "expr": "0 18 * * 1,2,3",
             "display": "0 18 * * 1,2,3"
           },
-          "next_run_at": "2026-09-28T18:00:00-07:00",
-          "last_run_at": "2026-09-23T18:06:51.051617-07:00",
+          "next_run_at": "2026-09-29T18:00:00-07:00",
+          "last_run_at": "2026-09-28T18:10:43.221602-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -245,7 +245,7 @@
       ],
       "gateway": {
         "state": "running",
-        "updated_at": "2026-09-28T04:55:35.309372+00:00",
+        "updated_at": "2026-09-28T20:51:40.461673+00:00",
         "active_agents": 0,
         "pid": 575649,
         "platforms": {
@@ -268,8 +268,8 @@
             "minutes": 30,
             "display": "every 30m"
           },
-          "next_run_at": "2026-09-28T07:19:57.571377-07:00",
-          "last_run_at": "2026-09-28T06:49:57.571377-07:00",
+          "next_run_at": "2026-09-29T07:09:38.624177-07:00",
+          "last_run_at": "2026-09-29T06:39:38.624177-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -291,8 +291,8 @@
             "expr": "30 7 * * *",
             "display": "30 7 * * *"
           },
-          "next_run_at": "2026-09-28T07:30:00-07:00",
-          "last_run_at": "2026-09-27T07:32:29.385928-07:00",
+          "next_run_at": "2026-09-29T07:30:00-07:00",
+          "last_run_at": "2026-09-28T07:41:12.085544-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -313,8 +313,8 @@
             "expr": "15 8 * * *",
             "display": "15 8 * * *"
           },
-          "next_run_at": "2026-09-28T08:15:00-07:00",
-          "last_run_at": "2026-09-27T08:15:45.646010-07:00",
+          "next_run_at": "2026-09-29T08:15:00-07:00",
+          "last_run_at": "2026-09-28T08:15:04.510043-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -333,8 +333,8 @@
             "expr": "0 9 * * *",
             "display": "0 9 * * *"
           },
-          "next_run_at": "2026-09-28T09:00:00-07:00",
-          "last_run_at": "2026-09-27T09:01:20.899084-07:00",
+          "next_run_at": "2026-09-29T09:00:00-07:00",
+          "last_run_at": "2026-09-28T09:01:12.630934-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -353,8 +353,8 @@
             "expr": "0 6,9,12,15,18 * * 1-5",
             "display": "0 6,9,12,15,18 * * 1-5"
           },
-          "next_run_at": "2026-09-28T09:00:00-07:00",
-          "last_run_at": "2026-09-28T06:04:41.438443-07:00",
+          "next_run_at": "2026-09-29T09:00:00-07:00",
+          "last_run_at": "2026-09-29T06:02:49.933221-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [],
@@ -373,8 +373,8 @@
             "expr": "0 16 * * *",
             "display": "0 16 * * *"
           },
-          "next_run_at": "2026-09-28T16:00:00-07:00",
-          "last_run_at": "2026-09-27T16:01:50.699399-07:00",
+          "next_run_at": "2026-09-29T16:00:00-07:00",
+          "last_run_at": "2026-09-28T16:00:42.426030-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
@@ -396,9 +396,9 @@
             "expr": "45 21 * * 1-4",
             "display": "45 21 * * 1-4"
           },
-          "next_run_at": "2026-09-28T21:45:00-07:00",
-          "last_run_at": null,
-          "last_status": null,
+          "next_run_at": "2026-09-29T21:45:00-07:00",
+          "last_run_at": "2026-09-28T21:46:54.104325-07:00",
+          "last_status": "ok",
           "deliver": "origin",
           "skills": [],
           "script": null,
@@ -416,34 +416,12 @@
             "expr": "0 22 * * *",
             "display": "0 22 * * *"
           },
-          "next_run_at": "2026-09-28T22:00:00-07:00",
-          "last_run_at": "2026-09-27T22:01:06.110991-07:00",
+          "next_run_at": "2026-09-29T22:00:00-07:00",
+          "last_run_at": "2026-09-28T22:00:24.663591-07:00",
           "last_status": "ok",
           "deliver": "origin",
           "skills": [
             "obsidian-reflection-workflows"
-          ],
-          "script": null,
-          "no_agent": false,
-          "model_snapshot": "deepseek/deepseek-v4-flash",
-          "provider_snapshot": "openrouter"
-        },
-        {
-          "id": "",
-          "name": "Weekly Peaches ear cleaning email reminder",
-          "active": true,
-          "state": "scheduled",
-          "schedule": {
-            "kind": "cron",
-            "expr": "30 2 * * 2",
-            "display": "30 2 * * 2"
-          },
-          "next_run_at": "2026-09-29T02:30:00-07:00",
-          "last_run_at": "2026-09-22T02:30:34.041672-07:00",
-          "last_status": "ok",
-          "deliver": "local",
-          "skills": [
-            "agentmail"
           ],
           "script": null,
           "no_agent": false,
@@ -460,8 +438,8 @@
             "expr": "0 6 * * *",
             "display": "0 6 * * *"
           },
-          "next_run_at": "2026-09-29T06:00:00-07:00",
-          "last_run_at": "2026-09-28T06:09:49.851157-07:00",
+          "next_run_at": "2026-09-30T06:00:00-07:00",
+          "last_run_at": "2026-09-29T06:04:33.061036-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [
@@ -483,8 +461,8 @@
             "expr": "0 7 * * *",
             "display": "0 7 * * *"
           },
-          "next_run_at": "2026-09-29T07:00:00-07:00",
-          "last_run_at": "2026-09-27T07:00:45.191330-07:00",
+          "next_run_at": "2026-09-30T07:00:00-07:00",
+          "last_run_at": "2026-09-28T07:00:03.803726-07:00",
           "last_status": "ok",
           "deliver": "local",
           "skills": [],
@@ -508,6 +486,28 @@
           "last_status": null,
           "deliver": "origin",
           "skills": [],
+          "script": null,
+          "no_agent": false,
+          "model_snapshot": "deepseek/deepseek-v4-flash",
+          "provider_snapshot": "openrouter"
+        },
+        {
+          "id": "",
+          "name": "Weekly Peaches ear cleaning email reminder",
+          "active": true,
+          "state": "scheduled",
+          "schedule": {
+            "kind": "cron",
+            "expr": "30 2 * * 2",
+            "display": "30 2 * * 2"
+          },
+          "next_run_at": "2026-10-06T02:30:00-07:00",
+          "last_run_at": "2026-09-29T02:30:48.497067-07:00",
+          "last_status": "ok",
+          "deliver": "local",
+          "skills": [
+            "agentmail"
+          ],
           "script": null,
           "no_agent": false,
           "model_snapshot": "deepseek/deepseek-v4-flash",
@@ -621,7 +621,7 @@
       "repo": "/root/health-dashboard",
       "public_path": "/root/health-dashboard/docs/index.html",
       "data_flow": "Glooko exports + WHOOP API \u2192 glucose/activity/vitals",
-      "last_commit": "e9162d0 Refresh health dashboard data",
+      "last_commit": "6c85d77 Add Sep 28 Back to Back Full Body (181 reps, 16K lb) + Sep 26 unplanned rest",
       "active": "EXISTS"
     },
     {
@@ -629,7 +629,7 @@
       "repo": "/root/podcast-digest",
       "public_path": "/root/podcast-digest/templates/index.html",
       "data_flow": "RSS feeds \u2192 transcript \u2192 episode summaries",
-      "last_commit": "fd2fd83 Refresh podcast digest data",
+      "last_commit": "bf66815 Refresh podcast digest data",
       "active": "EXISTS"
     },
     {
